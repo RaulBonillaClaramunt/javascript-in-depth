@@ -34,7 +34,9 @@ const createVendingMachine = () => {
       let coinsLeft = 100 - coins;
 
       if (coins === 100) {
-         console.log(`You got some ${(Math.floor(Math.random() * stock.length))})`);
+         randomIndex = Math.floor(Math.random() * stock.length);
+         randomItem = stock[randomIndex];
+         console.log(`You got some ${randomItem}`);
          coins = 0;
 
       } else {
