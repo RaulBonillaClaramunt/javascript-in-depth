@@ -50,6 +50,9 @@ const store = {
 console.log(store);//Print out "store" to the terminal
 console.log('------------------------');
 console.log(store['products']);//Only print out all the product objects in "store"
+for (let i = 0; i < store.products.length; i ++) {
+    console.log(store.products[i]);
+}
 console.log('------------------------');
 console.log(store.products[2]);//Only print out the 3rd product object in "store"
 console.log('------------------------');
