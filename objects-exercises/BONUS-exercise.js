@@ -1,23 +1,24 @@
 /*
-    1. Create an object called "houseForSale" with the following properties:
-        - area -> 940
-        - value -> 320000
-        - streetName -> "Fifth Street"
-        - built -> "2012"
-        - owner -> {name: "Blake", age: 29}
-        - offers -> [290000, 295000, 315000, 312000]
+    1. Create an object called "myConsole"
 
-    2. Print out "houseForSale" to the terminal
+    2. Assign "myConsole" the key "log" with a value that is
+       an arrow function.
 
-    3. Delete the property with the key "built"
+       This arrow function will have one parameter called "message"
 
-    4. Change the age of the owner to be 30 inside "houseForSale"
+       The function will just console.log out the "message"
 
-    5. Print out the maximum offerPrice (use reduce)
+    3. How would you call this "log" function inside the object?
 
-    6. Add a new property: "sale price" -> 312000
+    You should be able to do: myConsole.log("Hello, friend!");
 
-    7. Print out "houseForSale" to the terminal
-
-    *This is a challenging exercise - take it slow and step by step
+    BONUS: How might the built-in "console" work?
 */
+
+const myConsole = {
+    log: (message) => {
+        console.log(message);
+    }
+}
+
+myConsole.log('Hello, friend!');
