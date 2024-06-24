@@ -1,4 +1,17 @@
-/*create an object called 'mexico' with the following properties:
+/*
+    1. Create an object called "mexico" with the following properties:
+        - id -> 24
+        - name -> "Mexico"
+        - capital -> "Mexico City"
+        - neighbours -> ["USA", "Guatemala", "Belize"]
+
+    2. Print out "mexico" to the terminal
+
+    3. Change "id" to be 25
+
+    4. Add "Honduras" to the list of neighbours to "mexico"
+
+    5. Print out "mexico" to the terminal again
 */
 
 let mexico = {
@@ -15,5 +28,7 @@ console.log(mexico["id"]);
 mexico.id = 25;
 
 mexico.neighbours.push("Honduras");
+
+mexico["neighbours"].push('Jamaica');
 
 console.log(mexico);
