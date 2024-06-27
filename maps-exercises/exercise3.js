@@ -39,7 +39,7 @@ const maxOffer = houseForSale.get('offers').reduce((acc, currentValue) => {
    } else {
     return acc;
    }
-});
+}, 0);
 console.log(maxOffer);
 console.log('-----------');
 
