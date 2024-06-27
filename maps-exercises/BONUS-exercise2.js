@@ -18,3 +18,7 @@
 */
 
 const numbers = [10, 20, 15, 30, 15, 20, 35, 60, 10];
+const pairs = new Map();
+for (let i = 0; i < numbers.length - 1; i++) {
+   pairs.set(numbers[i], i);
+};
