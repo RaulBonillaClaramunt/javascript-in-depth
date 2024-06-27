@@ -34,7 +34,10 @@ store.set('storeNumber', 5).set('locationCity', 'Milan');
 store.set('locationCountry', 'Italy').set('products', [banana, apple, candy]);
 console.log(store);
 console.log('------');
-console.log(store.get('products'));
+//console.log(store.get('products'));
+for (let i = 0; i < store.get('products').length; i++) {
+    console.log(store.get('products')[i]);
+};
 console.log('------');
 console.log(store.get('products')[2]);
 store.get('products')[0].price = 1.75;
