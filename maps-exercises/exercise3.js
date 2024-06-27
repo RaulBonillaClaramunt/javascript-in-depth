@@ -23,3 +23,28 @@
 */
 const houseForSale = new Map();
 houseForSale.set('area', 940).set('value', 320000).set('streetName', 'Fifth Street');
+houseForSale.set('built', '2012').set('owner', {name: 'Blake', age: 29}).set('offers', [290000, 295000, 315000, 312000]);
+
+console.log(houseForSale);
+console.log('-----------');
+
+houseForSale.delete('built');
+houseForSale.get('owner').age = 30;
+console.log(houseForSale);
+console.log('-----------');
+
+const maxOffer = houseForSale.get('offers').reduce((acc, currentValue) => {
+   if (acc < currentValue) {
+    return currentValue;
+   } else {
+    return acc;
+   }
+}, 0);
+console.log(maxOffer);
+console.log('-----------');
+
+houseForSale.get('offers').push(350000);
+houseForSale.set('salePrice', 350000);
+console.log(maxOffer);
+console.log(houseForSale);
+console.log('-----------');

@@ -29,5 +29,7 @@ myConsole.get('log')('Maps are weird and fun');
 myConsole.set(1, 'number one');
 myConsole.set('1', 'string one');
 
+console.log(myConsole);
+
 console.log(myConsole.get(1));
 console.log(myConsole.get('1'));
