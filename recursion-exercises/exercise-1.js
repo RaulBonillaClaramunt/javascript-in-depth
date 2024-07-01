@@ -24,18 +24,24 @@ we form a new array pushing the elements in inverse order
 both arrays are the same once all the alements have been switched order,
 then we return true
 */
-const palindrome = (string, index) => {
+const palindrome = (string) => {
     const arr = string.split('');
-    let newArr = [];
 
-    const reverse = (arr) => {
-        if (newArr.length === arr.length) {
-            return;
+    const reverse = (arr, index = 0) => {
+        if (index === arr.length) {//base case arr.length - 1 = index,
+            return [];
         }
-
-        newArr.unshift(arr[index]);
-
+        let reversedArr = reverse(arr, index + 1);
+        reversedArr.push(arr[index]);
+        return reversedArr;
     }
 
+    const reversedArr = reverse(arr);
+    const reversedString = reversedArr.join('');
+
+    return reversedString === string;
 
 }
+
+console.log(palindrome('kayak'));
+console.log(palindrome('kaya'));
