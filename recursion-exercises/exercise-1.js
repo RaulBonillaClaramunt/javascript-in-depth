@@ -24,7 +24,7 @@ we form a new array pushing the elements in inverse order
 both arrays are the same once all the alements have been switched order,
 then we return true
 */
-const palindrome = (string) => {
+const palindrome1 = (string) => {
     const arr = string.split('');
 
     const reverse = (arr, index = 0) => {
@@ -43,5 +43,16 @@ const palindrome = (string) => {
 
 }
 
-console.log(palindrome('kayak'));
-console.log(palindrome('kaya'));
+const palindrome2 = (string) => {
+    if (string.length <= 1) return true;
+    if (string.length === 2) return string[0] === string[1];
+    if (string[0] === string[string.length - 1]) return true;
+
+    return palindrome2(string.substring(1, string.length - 1));
+}
+
+console.log(palindrome1('kayak'));
+console.log(palindrome1('kaya'));
+console.log('--------')
+console.log(palindrome2('kaya'));
+console.log(palindrome1('kayak'));
