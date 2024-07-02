@@ -21,3 +21,8 @@
           on Google/MDN
     HINT2: What are the base-cases and what do we want to return?
 */
+const flatten = (array) => {
+    if (!Array.isArray(array[index])) return array[index];
+
+
+}
