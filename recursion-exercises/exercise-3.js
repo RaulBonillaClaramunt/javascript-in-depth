@@ -35,6 +35,49 @@
           is an Object (naiive check, no need to be 100%)
     HINT2: The "delete" operator will delete a key from an Object
 */
-const flatten = (object) {
+    const flatten = (object) => {
+        let flat = {};
 
-}
+        for (let key in object) {
+            //console.log(key);
+            if (typeof object[key] === 'object') {
+                //console.log(object[key]);
+                const flattened = flatten(object[key]);
+
+                for (let key in flattened) {
+                    flat[key] = flattened[key];
+                }
+            } else {
+                flat[key] = object[key];
+            }
+        }
+
+        return flat;
+    }
+
+console.log(
+    flatten({
+        id: 1,
+        name: "bob",
+        happy: true,
+        friend: {
+        id2: 2,
+        name2: "alice",
+        happy2: true,
+        friend: {
+            id3: 3,
+            name3: "bruce",
+            happy3: true,
+            },
+        },
+    })
+    );
+
+    // {
+    //     id: 1,
+    //     name: 'bob',
+    //     happy: true,
+    //     id2: 2,
+    //     name2: 'alice',
+    //     happy2: true
+    // }
