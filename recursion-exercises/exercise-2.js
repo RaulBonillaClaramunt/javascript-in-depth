@@ -21,8 +21,35 @@
           on Google/MDN
     HINT2: What are the base-cases and what do we want to return?
 */
-const flatten = (array) => {
-    if (!Array.isArray(array[index])) return array[index];
+const flatten = (arr) => {//(array, index = 0)
+    let flat = [];
 
+    for (const element of arr) {
+        if (Array.isArray(element)) {
+            const flattened = flatten(element);
+            for (const el of flattened) {//flat.push(...flattened);
+                flat.push(el);
+            }
 
+        } else {
+            flat.push(element);
+        }
+    }
+
+    return flat;
 }
+/*
+    if (!Array.isArray(array[index])) {
+        flat.push(array[index]);//flat [1, 2, 3, ]
+        flatten(array, index + 1);
+    }
+
+    if (Array.isArray(array[index])) {
+        flatten(array[index], index = 0);
+    }
+*/
+
+
+console.log(flatten([1, 2, 3]));
+console.log(flatten([1, 2, 3, [1, 2, 3]]));
+console.log(flatten([1, [4, 5, 6, [7, 8, 9]], 2, 3]));
