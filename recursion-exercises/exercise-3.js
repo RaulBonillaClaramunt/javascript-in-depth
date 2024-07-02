@@ -35,3 +35,6 @@
           is an Object (naiive check, no need to be 100%)
     HINT2: The "delete" operator will delete a key from an Object
 */
+const flatten = (object) {
+
+}
