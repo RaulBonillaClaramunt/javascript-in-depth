@@ -27,7 +27,7 @@ const flatten = (arr) => {//(array, index = 0)
     for (const element of arr) {
         if (Array.isArray(element)) {
             const flattened = flatten(element);
-            for (const el of flattened) {
+            for (const el of flattened) {//flat.push(...flattened);
                 flat.push(el);
             }
 
