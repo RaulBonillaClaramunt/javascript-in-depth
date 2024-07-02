@@ -21,8 +21,16 @@
           on Google/MDN
     HINT2: What are the base-cases and what do we want to return?
 */
-const flatten = (array) => {
-    if (!Array.isArray(array[index])) return array[index];
+const flatten = (array, index = 0) => {
+    let flat = [];
+    if (!Array.isArray(array[index])) {
+        flat.push(array[index]);//flat [1, 2, 3, ]
+        flatten(array, index + 1);
+    }
 
+    if (Array.isArray(array[index])) {
+        flatten(array[index], index = 0);
+    }
 
+    return flat;
 }
