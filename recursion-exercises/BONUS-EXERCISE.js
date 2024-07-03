@@ -6,7 +6,7 @@
        Browser. Each Node has 3 possible properties:
        - childNodes (Array of Nodes)
        - nodeName (String - Type/Name of the Node, eg: p, div, h1)
-       - innerText (String - Actual Content in between the node tags)
+       - innerText (String - Actual Content in between the node tags)//BASE CASE
 
     3. Use recursion to re-construct the HTML in the correct order
        given the DOM Object passed in and all the children inside.
@@ -52,7 +52,7 @@ const document = {
             childNodes: [
               {
                 nodeName: "script",
-                innerText: "console.log('hi');",
+                innerText: "console.log('hi');",//bottom
               },
             ],
           },
@@ -67,17 +67,17 @@ const document = {
                     childNodes: [
                       {
                         nodeName: "b",
-                        innerText: "Home",
+                        innerText: "Home",//bottom
                       },
                     ],
                   },
                   {
                     nodeName: "li",
-                    innerText: "Blog",
+                    innerText: "Blog",//bottom
                   },
                   {
                     nodeName: "li",
-                    innerText: "About",
+                    innerText: "About",//bottom
                   },
                 ],
               },
@@ -86,11 +86,11 @@ const document = {
                 childNodes: [
                   {
                     nodeName: "h1",
-                    innerText: "My Blog",
+                    innerText: "My Blog",//bottom
                   },
                   {
                     nodeName: "p",
-                    innerText: "Welcome to my blog!",
+                    innerText: "Welcome to my blog!",//bottom
                   },
                 ],
               },
@@ -100,3 +100,31 @@ const document = {
       },
     ],
   };
+
+  const constructionDOM = (object) => {
+    let reconstructed = '';
+
+    if (object.innerText) {//BASE CASE
+      //reconstructed += object['innerText'] + '</' + object['nodeName'] + '>';
+      return object.innerText;
+    }
+
+    for (let key in object) {
+      if (object.nodeName) {
+        //console.log(key);
+        reconstructed += ('<' + object['nodeName'] + '>');
+      }
+      if (object.childNodes) {
+        //reconstructed += constructionDOM(object['childNodes']);
+        const childNoded = constructionDOM(object.childNodes);
+        for (const childNodes of object.childNodes) {
+
+        }
+      }
+
+    }
+
+    return reconstructed;
+  }
+
+  console.log(constructionDOM(document));
