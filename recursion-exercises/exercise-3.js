@@ -43,10 +43,11 @@
             if (typeof object[key] === 'object') {
                 //console.log(object[key]);
                 const flattened = flatten(object[key]);
-
+                //flat ={...flat, ...flattened}
                 for (let key in flattened) {
                     flat[key] = flattened[key];
                 }
+                return flat;
             } else {
                 flat[key] = object[key];
             }
@@ -68,6 +69,8 @@ console.log(
             id3: 3,
             name3: "bruce",
             happy3: true,
+            hi: [1, 2, 3],
+            bye:(str) => console.log(str),
             },
         },
     })
