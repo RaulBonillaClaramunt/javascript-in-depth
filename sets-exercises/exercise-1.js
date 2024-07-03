@@ -4,3 +4,11 @@
 
     2. How can you print out all the UNIQUE points inside "points"?
 */
+const points = [10, 20, 10, 30, 15, 15, 35, 60, 10];
+let unique = new Set();
+
+for (const num of points) {
+    unique.add(num);
+}
+
+console.log(unique);
