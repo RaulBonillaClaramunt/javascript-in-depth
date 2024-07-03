@@ -17,7 +17,22 @@
 */
 
 const fizzbuzz = (startNum, endNum) => {
+    if (startNum === endNum + 1) return;
 
+    if (startNum % 15 === 0) {
+        console.log(`FizzBuzz ${startNum}`);
+    } else if (startNum % 3 === 0) {
+        console.log(`Fizz ${startNum}`);
+    } else if (startNum % 5 === 0) {
+        console.log(`Buzz ${startNum}`);
+    } else {
+        console.log(`${startNum}`);
+    }
+
+    fizzbuzz(startNum + 1, endNum);
+};
+
+/*
     if (startNum === endNum + 1) {
         return;
     }
@@ -33,6 +48,6 @@ const fizzbuzz = (startNum, endNum) => {
     }
 
     fizzbuzz(startNum + 1, endNum);
-}
+*/
 
-fizzbuzz(1, 20);
+fizzbuzz(1, 30);
