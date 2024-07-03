@@ -29,3 +29,6 @@ let items = [
     {name: "candy", quantity: 1, price: 3.50}];
 
 let results = [];
+
+let duplicates = new.Set(items);
+console.log(duplicates);

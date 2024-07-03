@@ -17,6 +17,7 @@ for (const num of numbers) {
     if (unique.has(num)) {
       console.log(num);
       return num;
+      //break; would be useful as well;
     }
     unique.add(num);
 }
