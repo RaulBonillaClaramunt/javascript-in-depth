@@ -12,3 +12,9 @@ for (const num of points) {
 }
 
 console.log(unique);
+//Set(6) { 10, 20, 30, 15, 35, 60 }
+
+let cheatUnique = new Set(points);
+
+console.log(cheatUnique);
+//Set(6) { 10, 20, 30, 15, 35, 60 }
