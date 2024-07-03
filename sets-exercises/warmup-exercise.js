@@ -18,11 +18,12 @@ numbers.add(5);
 numbers.add(2);
 numbers.add(3);
 numbers.add(4);
-
+console.log(numbers);
 //Set has unique elements. If a repeteaded element is added,
 //it won't show
-console.log(numbers);
+
 let numbers2 = [];
+//const numbers = [1, 2, 3, 4, 5, 2, 3, 4];
 numbers2.push(1);
 numbers2.push(2);
 numbers2.push(3);
