@@ -21,7 +21,10 @@ const ages = [10, 42, 15, 22, 11, 74, 39, 2];
 const results = [];
 
 for (const age of ages) {
-    const object = { age: age, name: 'Dragon'};
+    const object = {
+        age: age,
+        name: 'Dragon'
+    };
     results.push(object);
 }
 

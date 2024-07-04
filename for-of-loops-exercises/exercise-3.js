@@ -13,12 +13,19 @@
     3. Also print out the total value of all items in the backpack
 */
 const backpack = new Map();
-backpack.add('1', {name: "Sword", value: 300});
-backpack.add('2', {name: "Banana", value: 5});
-backpack.add('3', {name: "Gold Nugget", value: 10000});
-backpack.add('4', {name: "Pants", value: 100});
-
-for (const item of backpack) {
+backpack.set(1, {name: "Sword", value: 300});
+backpack.set(2, {name: "Banana", value: 5});
+backpack.set(3, {name: "Gold Nugget", value: 10000});
+backpack.set(4, {name: "Pants", value: 100});
+/*
     let nameAndValue = backpack.get(1);
     console.log(nameAndValue.name + ': ' + nameAndValue.value);
+*/
+for (const item of backpack) {//[1, {name: "Sword", value: 300}]
+    console.log(item[1].name + ': $' + item[1].value);
+};
+let count = 0;
+for (const item of backpack) {
+    count += item[1].value;
 }
+console.log(`Total $${count}`);

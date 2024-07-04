@@ -26,6 +26,7 @@ names.add('Leia');
 for (const name of names) {
     const capitalized = name.toUpperCase();
     capsNames.add(capitalized);
+    //capsNames.add(name.toUpperCase());
 }
 
 console.log(capsNames);
