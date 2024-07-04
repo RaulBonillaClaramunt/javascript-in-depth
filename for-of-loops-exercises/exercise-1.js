@@ -19,7 +19,6 @@
 */
 const ages = [10, 42, 15, 22, 11, 74, 39, 2];
 const results = [];
-let object;
 
 for (const age of ages) {
     const object = { age: age, name: 'Dragon'};
