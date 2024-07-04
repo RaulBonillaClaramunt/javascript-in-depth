@@ -15,3 +15,17 @@
 
     4. Print out "capsNames"
 */
+const names = new Set();
+const capsNames = new Set();
+
+names.add('Bilbo');
+names.add('Hermione');
+names.add('Spock');
+names.add('Leia');
+
+for (const name of names) {
+    const capitalized = name.toUpperCase();
+    capsNames.add(capitalized);
+}
+
+console.log(capsNames);
