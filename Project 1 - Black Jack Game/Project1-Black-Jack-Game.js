@@ -29,7 +29,8 @@
 //Generate a deck of 52 cards: array of 52 objects {card: King, suit: spades} */
 
 const suits = ['clubs', 'hearts', 'spades', 'diamonds'];
-const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spades', 'Queen', 'king']
+//const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spades', 'Queen', 'king'];
+const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spades', 'Queen', 'king'];
 let deck = [];
 
 for (const suit of suits) {//deck[0] = {card: x, suit: X}
@@ -52,22 +53,21 @@ let max = 52;
 for (let i = 0; i < 2; i++) {
     let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
     playerHand.push(deck.splice(pickaCard, 1));
-    playerHand = [].concat(...playerHand);
+    playerHand = [].concat(...playerHand);//[ { card: 'Spades', suit: 'diamonds' } ]
     //create a conditional to get player' and dealer' scores
-    if (playerHand[playerHand.length - 1].card === ('Ace' || 'Queen' || 'King' || '10')) {
+    let cardValue = playerHand[playerHand.length - 1].card;
+    console.log(cardValue);
+    if (cardValue === 'Ace' || cardValue === 'Queen' || cardValue === 'King') {
         playerScore += 10;
-    }
-    for (let num = 1; num < 9; num ++) {
-        if (playerHand[playerHand.length - 1].card === cards[num]) {
-            playerScore += num;
-        }
+    } else if (cards.includes(cardValue)) {
+        playerScore += Number(cardValue);
     }
     max--;
 }//
-console.log(playerHand);
+console.log(playerHand);//
 console.log('-----');
 console.log(playerScore);
-//repeat for dealer
+/*/repeat for dealer
 for (let i = 0; i < 2; i++) {
     let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
     dealerHand.push(deck.splice(pickaCard, 1));
@@ -75,4 +75,7 @@ for (let i = 0; i < 2; i++) {
     max--;
 }//
 console.log(dealerHand);
+console.log(dealerScore);
+console.log('-----');
 console.log(max);
+*/
