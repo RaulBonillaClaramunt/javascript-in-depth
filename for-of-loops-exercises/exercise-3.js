@@ -28,4 +28,3 @@ let count = 0;
 for (const item of backpack) {
     count += item[1].value;
 }
-console.log(count);
