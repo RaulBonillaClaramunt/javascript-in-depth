@@ -26,10 +26,9 @@
     - Starting hands
     - Ending hands + who won + score
 */
-//Generate a deck of 52 cards: array of 52 objects {card: King, suit: spades} */
 
+//Generate a deck of 52 cards: array of 52 objects {card: King, suit: spades} */
 const suits = ['clubs', 'hearts', 'spades', 'diamonds'];
-//const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spade', 'Queen', 'King'];
 const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spade', 'Queen', 'King'];
 let deck = [];
 
@@ -39,24 +38,25 @@ for (const suit of suits) {//deck[0] = {card: x, suit: X}
     }
 }
 //console.log(deck);
-let dealerHand = [];
-let dealerScore = 0;
-let playerHand = [];
-let playerScore = 0;
-
-const min = 1;
-let max = 52;
 
 //randomly pick a card (get a random number between 1 and 52) twice
 //splice each card from deck and push it to playerHand
 //flatten playerHand array (it becomes an array of arrays containing an object)
+let dealerHand = [];
+let dealerScore = 0;
+let playerHand = [];
+let playerScore = 0;
+const min = 1;
+let max = 52;
+let gameEnded = false;
+
 for (let i = 0; i < 2; i++) {
     let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
     playerHand.push(deck.splice(pickaCard, 1));
-    playerHand = [].concat(...playerHand);//[ { card: 'Spades', suit: 'diamonds' } ]
+    playerHand = [].concat(...playerHand);
+
     //create a conditional to get player' and dealer' scores
     let cardValue = playerHand[playerHand.length - 1].card;
-    //console.log(cardValue);
     if (cardValue === 'Spade' || cardValue === 'Queen' || cardValue === 'King') {
         playerScore += 10;
     } else if (cardValue === 'Ace') {
@@ -66,19 +66,18 @@ for (let i = 0; i < 2; i++) {
     }
     max--;
 }//
-/*
+console.log("Starting player hand: ");
 console.log(playerHand);
-console.log(playerScore);
+console.log(`Starting player score: ${playerScore}`);
 console.log('-----');
-*/
+
 //repeat for dealer
 for (let i = 0; i < 2; i++) {
     let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
     dealerHand.push(deck.splice(pickaCard, 1));
-    dealerHand = [].concat(...dealerHand);//[ { card: 'Spades', suit: 'diamonds' } ]
-    //create a conditional to get player' score
+    dealerHand = [].concat(...dealerHand);
     let cardValue = dealerHand[dealerHand.length - 1].card;
-    //console.log(cardValue);
+
     if (cardValue === 'Spade' || cardValue === 'Queen' || cardValue === 'King') {
         dealerScore += 10;
     } else if (cardValue === 'Ace') {
@@ -88,19 +87,21 @@ for (let i = 0; i < 2; i++) {
     }
     max--;
 }//
-/*
+console.log("Starting dealer hand: ");
 console.log(dealerHand);
-console.log(dealerScore);
-console.log(max);
-*/
+console.log(`Starting dealer score: ${dealerScore}`);
+console.log('-----');
+
 //player and dealer are dealt 1 more card until score is >= 21.
 for (let index = 0; index < 12; index++) {
+    if (gameEnded) {//if game ending conditions are met, loop breaks and game is finished
+        break;
+    }
     let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
     playerHand.push(deck.splice(pickaCard, 1));
-    playerHand = [].concat(...playerHand);//[ { card: 'Spades', suit: 'diamonds' } ]
-    //conditional to get player' and dealer' scores
+    playerHand = [].concat(...playerHand);
     let cardValue = playerHand[playerHand.length - 1].card;
-    //console.log(cardValue);
+
     if (cardValue === 'Spade' || cardValue === 'Queen' || cardValue === 'King') {
         playerScore += 10;
     } else if (cardValue === 'Ace') {
@@ -110,7 +111,50 @@ for (let index = 0; index < 12; index++) {
     }
     max--;
     if (playerScore === 21) {
-        console.log(`You win! Your final score was ${playerScore} while the deealer had ${dealerScore}`);
-
+        console.log(`You win! Your final score was ${playerScore} while the dealer had ${dealerScore}`);
+        console.log('-----');
+        gameEnded = true;
+        break;
+    } else if (playerScore > 21) {
+        console.log(`You loose! Your final score was ${playerScore} while the dealer had ${dealerScore}`);
+        console.log('-----');
+        gameEnded = true;
+        break;
     }
 }
+console.log("Ending player hand: ");
+console.log(playerHand);
+console.log(`Ending player score: ${playerScore}`);
+
+for (let index = 0; index < 12; index++) {
+    if (gameEnded) {
+        break;
+    }
+    let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
+    dealerHand.push(deck.splice(pickaCard, 1));
+    dealerHand = [].concat(...dealerHand);
+    let cardValue = dealerHand[dealerHand.length - 1].card;
+
+    if (cardValue === 'Spade' || cardValue === 'Queen' || cardValue === 'King') {
+        dealerScore += 10;
+    } else if (cardValue === 'Ace') {
+        dealerScore += 1;
+    } else if (cards.includes(cardValue)) {
+        dealerScore += Number(cardValue);
+    }
+    max--;
+    if (dealerScore === 21) {
+        console.log(`You loose! Your final score was ${playerScore} while the dealer had ${dealerScore}`);
+        console.log('-----');
+        gameEnded = true;
+        break;
+    } else if (dealerScore > 21) {
+        console.log(`You win! Your final score was ${playerScore} while the dealer had ${dealerScore}`);
+        console.log('-----');
+        gameEnded = true;
+        break;
+    }
+}
+console.log("Ending dealer hand: ");
+console.log(dealerHand);
+console.log(`Ending dealer score: ${dealerScore}`);
