@@ -29,8 +29,8 @@
 //Generate a deck of 52 cards: array of 52 objects {card: King, suit: spades} */
 
 const suits = ['clubs', 'hearts', 'spades', 'diamonds'];
-//const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spades', 'Queen', 'king'];
-const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spades', 'Queen', 'king'];
+//const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spade', 'Queen', 'King'];
+const cards = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Spade', 'Queen', 'King'];
 let deck = [];
 
 for (const suit of suits) {//deck[0] = {card: x, suit: X}
@@ -56,26 +56,61 @@ for (let i = 0; i < 2; i++) {
     playerHand = [].concat(...playerHand);//[ { card: 'Spades', suit: 'diamonds' } ]
     //create a conditional to get player' and dealer' scores
     let cardValue = playerHand[playerHand.length - 1].card;
-    console.log(cardValue);
-    if (cardValue === 'Ace' || cardValue === 'Queen' || cardValue === 'King') {
+    //console.log(cardValue);
+    if (cardValue === 'Spade' || cardValue === 'Queen' || cardValue === 'King') {
         playerScore += 10;
+    } else if (cardValue === 'Ace') {
+        playerScore += 1;
     } else if (cards.includes(cardValue)) {
-        playerScore += Number(cardValue);
+    playerScore += Number(cardValue);
     }
     max--;
 }//
-console.log(playerHand);//
-console.log('-----');
+/*
+console.log(playerHand);
 console.log(playerScore);
-/*/repeat for dealer
+console.log('-----');
+*/
+//repeat for dealer
 for (let i = 0; i < 2; i++) {
     let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
     dealerHand.push(deck.splice(pickaCard, 1));
-    dealerHand = [].concat(...dealerHand);
+    dealerHand = [].concat(...dealerHand);//[ { card: 'Spades', suit: 'diamonds' } ]
+    //create a conditional to get player' score
+    let cardValue = dealerHand[dealerHand.length - 1].card;
+    //console.log(cardValue);
+    if (cardValue === 'Spade' || cardValue === 'Queen' || cardValue === 'King') {
+        dealerScore += 10;
+    } else if (cardValue === 'Ace') {
+        dealerScore += 1;
+    } else if (cards.includes(cardValue)) {
+    dealerScore += Number(cardValue);
+    }
     max--;
 }//
+/*
 console.log(dealerHand);
 console.log(dealerScore);
-console.log('-----');
 console.log(max);
 */
+//player and dealer are dealt 1 more card until score is >= 21.
+for (let index = 0; index < 12; index++) {
+    let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
+    playerHand.push(deck.splice(pickaCard, 1));
+    playerHand = [].concat(...playerHand);//[ { card: 'Spades', suit: 'diamonds' } ]
+    //conditional to get player' and dealer' scores
+    let cardValue = playerHand[playerHand.length - 1].card;
+    //console.log(cardValue);
+    if (cardValue === 'Spade' || cardValue === 'Queen' || cardValue === 'King') {
+        playerScore += 10;
+    } else if (cardValue === 'Ace') {
+        playerScore += 1;
+    } else if (cards.includes(cardValue)) {
+    playerScore += Number(cardValue);
+    }
+    max--;
+    if (playerScore === 21) {
+        console.log(`You win! Your final score was ${playerScore} while the deealer had ${dealerScore}`);
+
+    }
+}
