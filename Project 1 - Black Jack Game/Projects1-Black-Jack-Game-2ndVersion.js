@@ -26,3 +26,12 @@ const generateDeck = () => {
     return deck;
 };
 const deck = generateDeck();
+
+const drawCard = () => {
+    let randomIndex = Math.floor(Math.random() * deck.length);
+    const card = deck.splice(randomIndex, 1);
+    console.log(card);
+}
+drawCard();
+drawCard();
+console.log(deck.length);
