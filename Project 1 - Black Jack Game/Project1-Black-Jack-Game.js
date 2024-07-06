@@ -48,10 +48,17 @@ let gameEnded = false;
 
 for (let i = 0; i < 2; i++) {
     //randomly pick a card (get a random number between 1 and 52) twice
+    //Needed AI assistance here
     let pickaCard = Math.floor(Math.random() * (max - min + 1)) + min;
     //splice each card from deck and push it to playerHand
     playerHand.push(deck.splice(pickaCard, 1));
     //flatten playerHand array (it becomes an array of arrays containing an object)
+    //By concatenating the arrays using concat() and spreading the elements,
+    //the resulting array is a single-dimensional array that contains
+    //all the elements from the original nested arrays.
+    //It's worth noting that the concat() method does not modify the original arrays
+    // Instead, it returns a new array that contains the concatenated elements.
+    //Needed AI assistance here
     playerHand = [].concat(...playerHand);
 
     //create a conditional to get player' and dealer' scores
@@ -61,6 +68,8 @@ for (let i = 0; i < 2; i++) {
     } else if (cardValue === 'Ace') {
         playerScore += 1;
     } else if (cards.includes(cardValue)) {
+    //turn string into number
+    //Needed AI assistance here
     playerScore += Number(cardValue);
     }
     max--;//each time a card is dealt, max diminishes in one
@@ -94,6 +103,8 @@ console.log('-----');
 //player and dealer are dealt 1 more card until score is >= 21.
 for (let index = 0; index < 12; index++) {
     //if game ending conditions are met, loop breaks and game is finished
+    //set a flag
+    //Needed AI assistance here
     if (gameEnded) {
         break;
     }
