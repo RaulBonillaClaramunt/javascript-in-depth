@@ -25,13 +25,19 @@ const generateDeck = () => {
 
     return deck;
 };
-const deck = generateDeck();
+const myDeck = generateDeck();
 
-const drawCard = () => {
+//when coding, try to gather each need into a Function and make that Function
+//self-contained so that anything it needs is inside the scope of the Function
+//in this case, drawCard function has a deck argument that we can polute when
+//we call the function and assign it to a variable (const myCard)
+const drawCard = (deck) => {
     let randomIndex = Math.floor(Math.random() * deck.length);
-    const card = deck.splice(randomIndex, 1);
-    console.log(card);
+    const card = deck[randomIndex];
+    deck.splice(randomIndex, 1);
+    return card;
 }
-drawCard();
-drawCard();
-console.log(deck.length);
+
+const playerHand = [];
+const dealerHand = [];
+const myCard = drawCard(myDeck);//console.log(myCard); + console.log(myDeck.length);
