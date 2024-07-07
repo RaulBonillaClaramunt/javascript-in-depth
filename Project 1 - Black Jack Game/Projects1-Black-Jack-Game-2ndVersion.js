@@ -40,4 +40,25 @@ const drawCard = (deck) => {
 
 const playerHand = [];
 const dealerHand = [];
-const myCard = drawCard(myDeck);//console.log(myCard); + console.log(myDeck.length);
+
+playerHand.push(drawCard(myDeck));
+playerHand.push(drawCard(myDeck));
+dealerHand.push(drawCard(myDeck));
+dealerHand.push(drawCard(myDeck));
+
+const checkScore = (hand) => {
+    let total = 0;
+
+    for (const card of hand) {
+        console.log(card);
+        total += playerHand.card;
+    }
+}
+
+checkScore(playerHand);
+
+/*
+console.log(playerHand);
+console.log(dealerHand);
+console.log(myDeck.length);
+*/
