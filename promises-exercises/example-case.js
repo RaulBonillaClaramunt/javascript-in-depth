@@ -1,14 +1,23 @@
 const myPromise = new Promise((resolve, reject) => {
 setTimeout(() => {
     console.log('Hello, my friend!');
-    //resolve("Here's your icecream");
-    reject("Sorry, we haven't got that kind of icecream");
+    resolve("Here's your icecream");
+    //reject("Sorry, we haven't got that kind of icecream");
 }, 2000);
 });
-myPromise.then((resolvedValue) => {
+
+myPromise
+.then((resolvedValue) => {
     console.log("Promise seems to be done");
     console.log(resolvedValue);
-}).catch
+    return('Hey Ho!');
+})
+.then((anotherValue) => {
+    console.log(anotherValue);
+})
+.catch((error) => {
+console.log(error);
+});
 
 console.log("Hello?");
 console.log(myPromise);
