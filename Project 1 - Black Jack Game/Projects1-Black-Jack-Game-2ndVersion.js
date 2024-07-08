@@ -12,7 +12,7 @@ const generateDeck = () => {
       '8',
       '9',
       '10',
-      'Spade',
+      'Jack',
       'Queen',
       'King'
     ];
@@ -25,7 +25,6 @@ const generateDeck = () => {
 
     return deck;
 };
-const myDeck = generateDeck();
 
 //when coding, try to gather each need into a Function and make that Function
 //self-contained so that anything it needs is inside the scope of the Function
@@ -38,6 +37,23 @@ const drawCard = (deck) => {
     return card;
 }
 
+const checkScore = (hand) => {
+    let total = 0;
+
+    for (const cardObject of hand) {
+        if (cardObject.card === 'Jack' || cardObject.card === 'Queen' || cardObject.card === 'King') {
+            total += 10;
+        } else if (cardObject.card === 'Ace') {
+            total += 1;
+        } else {
+            total += Number(cardObject.card);
+        }
+    }
+
+    return total;
+}
+
+const myDeck = generateDeck();
 const playerHand = [];
 const dealerHand = [];
 
@@ -46,16 +62,52 @@ playerHand.push(drawCard(myDeck));
 dealerHand.push(drawCard(myDeck));
 dealerHand.push(drawCard(myDeck));
 
-const checkScore = (hand) => {
-    let total = 0;
+console.log("Starting Player Hand: ", playerHand);
+console.log("Starting Player Score: ", checkScore(playerHand));
+console.log("Starting Dealer Hand: ", dealerHand);
+console.log("Starting Dealer Score: ", checkScore(dealerHand));
 
-    for (const card of hand) {
-        console.log(card);
-        total += playerHand.card;
+
+
+//we create an infinite loop that breaks when one of the players hits 21 or over
+while (true) {
+    //deal the player a card + chek if player busts 21 + check if player hits 21
+    playerHand.push(drawCard(myDeck));//we can reuse the code we wrote before
+    const playerScore = checkScore(playerHand);
+    let dealerScore = checkScore(dealerHand);
+    if (playerScore > 21) {
+        console.log(`You lose! Your final score was ${playerScore}.
+            While the dealer had ${dealerScore}`);
+            break;
     }
-}
 
-checkScore(playerHand);
+    if (playerScore === 21) {
+        console.log(`You win! Your final score was ${playerScore}.
+            While the dealer had ${dealerScore}`);
+            break;
+    }
+
+    dealerHand.push(drawCard(myDeck));//we can reuse the code we wrote before
+    dealerScore = checkScore(dealerHand);
+
+    if (dealerScore > 21) {
+        console.log(`You win! Your final score was ${playerScore}.
+            While the dealer had ${dealerScore}`);
+            break;
+    }
+
+    if (dealerScore === 21) {
+        console.log(`You lose! Your final score was ${playerScore}.
+            While the dealer had ${dealerScore}`);
+            break;
+    }
+    //deal the dealer a card + chek if dealer busts 21 + check if dealer hits 21
+};
+
+console.log("Ending Player Hand: ", playerHand);
+console.log("Ending Player Score: ", checkScore(playerHand));
+console.log("Ending Dealer Hand: ", dealerHand);
+console.log("Ending Dealer Score: ", checkScore(dealerHand));
 
 /*
 console.log(playerHand);
