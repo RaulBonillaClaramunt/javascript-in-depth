@@ -2,7 +2,7 @@ const myPromise = new Promise((resolve, reject) => {
 setTimeout(() => {
     console.log('Hello, my friend!');
     resolve("Here's your icecream");
-    //reject("Sorry, we haven't got that kind of icecream");
+    reject("Sorry, we haven't got that kind of icecream");
 }, 2000);
 });
 
@@ -10,6 +10,7 @@ myPromise
 .then((resolvedValue) => {
     console.log("Promise seems to be done");
     console.log(resolvedValue);
+    console.log(myPromise);
     return('Hey Ho!');
 })
 .then((anotherValue) => {
