@@ -13,3 +13,25 @@
 
     HINT: Use setTimeout for the delay
 */
+console.log("Program started");
+
+const promise1 = new Promise((resolve, reject) => {
+   setTimeout(() => {
+      resolve("Step 1 complete");
+   }, 3000);
+});
+
+console.log(promise1);
+console.log("Program in progress...");
+
+promise1
+.then((value) => {
+   console.log(value);
+   setTimeout(() => {
+      return ("Step 2 complete");
+
+   }, 3000);
+})
+.then((anotherValue) => {
+   console.log(anotherValue);
+});

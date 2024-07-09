@@ -9,7 +9,7 @@
 */
 
 console.log("Program started");
-
+/*
 const myPromise = new Promise((resolve, reject) => {
 
     setTimeout(() => {
@@ -23,4 +23,18 @@ console.log("Program in progress...");
 myPromise
 .then((value) => {
     console.log(value);
+});
+ALTERNATIVE SOLUTION*/
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve();
+    }, 3000);
+});
+
+console.log(myPromise);
+console.log("Program in progress...");
+
+myPromise
+.then(() => {
+    console.log("Program complete");
 });
