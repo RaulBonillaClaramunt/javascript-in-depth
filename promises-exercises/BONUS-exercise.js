@@ -26,8 +26,14 @@ const promise2 = new Promise((resolve, reject) => {
 
 Promise.all([promise1, promise2])
 .then((values) => {
-
+/*
     let array = values;
     let result = values[0] + values[1];
     console.log(result);
+*/
+    const value1 = values[0];
+    const value2 = values[1];
+    console.log(values);
+    console.log(value1, value2);
+    console.log("Total sum of values is: " + (value1 + value2));
 })
