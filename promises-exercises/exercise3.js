@@ -31,16 +31,56 @@
 */
 console.log("Program started");
 
-const promise1 = new Promise((resolve, reject) => {
+const myPromise = new Promise((resolve, reject) => {
    setTimeout(() => {
       resolve({data: "Hello, friend!", error: null});
    }, 3000)
 });
 
-console.log(promise1);
+console.log(myPromise);
 console.log("Program in progress...");
 
-promise1
+myPromise
+.then((value) => {
+   console.log(value);
+   return new Promise((resolve, reject) => {
+      setTimeout(() => {
+         resolve("First promise chain complete!");
+      }, 2000);
+   })
+})
+.then((val) => {
+   console.log(val);
+});
+
+myPromise
+.then((value) => {
+   console.log(value);
+   return new Promise((resolve, reject) => {
+      setTimeout(() => {
+         resolve("Second promise chain complete!");
+      }, 5000);
+   })
+})
+.then((value) => {
+   console.log(value);
+});
+
+myPromise
+.then((value) => {
+   console.log(value);
+   return new Promise((resolve, reject) => {
+      setTimeout(() => {
+         resolve("Third promise chain complete but prints before Second due to setTimeout set!");
+      }, 3500);
+   })
+})
+.then((value) => {
+   console.log(value);
+});
+
+/*alt solution:
+myPromise
 .then((value1) => {
    console.log(value1);
    return new Promise((resolve, reject) => {
@@ -54,6 +94,7 @@ promise1
    return new Promise((resolve, reject) => {
       setTimeout(() => {
          console.log("Second promise chain complete!");
-      }, 10000);
+      }, 3000);
    })
 });
+*/
