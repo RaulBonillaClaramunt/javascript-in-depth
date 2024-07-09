@@ -11,5 +11,26 @@
     3. Inside the catch block, log out "number" as well
 
     4. What is the issue with this setup/code?
+       - Issue is number is declared in the scope of try and catch can't access it
+
     5. How can we fix it so we can access "number" in the catch?
+       - we can fix this error by declaring number in the outter scope
 */
+let number = 1337;
+
+try {
+    //let number = 1337;
+
+    number += Math.floor(Math.random() * (1000 - 0));
+
+    console.log(number);
+
+    if (number < 2000) {
+        throw new Error ("You lose!");
+    }
+
+    console.log("You win!");
+} catch (error) {
+    console.log(error);
+    console.log(`The number is ${number}`);
+}
