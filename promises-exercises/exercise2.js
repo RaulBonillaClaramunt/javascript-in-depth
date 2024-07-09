@@ -17,6 +17,26 @@ console.log("Program started");
 
 const promise1 = new Promise((resolve, reject) => {
    setTimeout(() => {
+      resolve();
+   }, 3000);
+});
+
+console.log(promise1);
+console.log("Program in progress...");
+
+promise1
+.then(() => {
+   console.log("Step 1 complete");
+      return("Step 2 complete");
+})
+.then((value) => {
+   setTimeout(() => {
+      console.log(value);
+   }, 3000);
+});
+/*
+const promise1 = new Promise((resolve, reject) => {
+   setTimeout(() => {
       resolve("Step 1 complete");
    }, 3000);
 });
@@ -35,3 +55,4 @@ promise1
 .then((anotherValue) => {
    console.log(anotherValue);
 });
+*/
