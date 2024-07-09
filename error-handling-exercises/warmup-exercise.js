@@ -10,3 +10,11 @@
 */
 
 console.log("Program started");
+try {
+    throw new Error ("Uh oh!");
+} catch (err) {
+    console.error(err);
+}
+
+
+console.log("Program complete!");
