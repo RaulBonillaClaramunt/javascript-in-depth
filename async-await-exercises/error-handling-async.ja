@@ -1,0 +1,9 @@
+const makeTimeout = (ms) => {//prints string "All done!"
+    const timeout = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("All done!");
+        }, ms);
+    });
+
+    return timeout;
+};
