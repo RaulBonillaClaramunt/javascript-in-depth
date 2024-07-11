@@ -21,3 +21,36 @@
     Q1: Which of these 2 methods do you prefer?
     Q2: Which of these 2 methods is easier to read?
 */
+const goGetCandies = () => {
+   return new Promise((resolve, reject) => {
+      setTimeout(() => {
+         resolve({ candy: "sour keys", quantity: 10 });
+      }, 2000);
+   });
+};
+
+const sellCandies = (candies) => {
+   return new Promise((resolve, reject) => {
+      //console.log("This are incoming Candies: ", candies);
+      const howManyCandies = candies.quantity * 25;
+      //console.log(howManyCandies);
+      setTimeout(() => {
+         resolve("we've made " + howManyCandies + " cents of $");
+      }, 3000);
+   })
+};
+
+const candyMoney = async () => {
+   const gottenCandies = await goGetCandies();
+   //console.log("this are gottenCandies: ", gottenCandies);
+   const moneyMade = await sellCandies(gottenCandies);
+   console.log(moneyMade);
+   const time2 = new Date();
+   const timeLapse = time2 - time1;
+   console.log(`Program ends after ${timeLapse} milliseconds ;)`);
+};
+
+console.log("Program starts...");
+const time1 = new Date();
+
+candyMoney();

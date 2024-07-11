@@ -14,7 +14,7 @@ const causeError = async () => {
         const result = await makeTimeout(2000);
         console.log(result);
     } catch(error) {
-        console.log("We are in hte error case!");
+        console.log("We are in the error case!");
         console.error(error);
     }
 };

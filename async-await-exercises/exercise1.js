@@ -28,8 +28,8 @@ const fetchUser = () => {
    });
 };
 
-const login = (object) => {
-   if (object.data.admin === true) {
+const login = (user) => {
+   if (user.admin) {//if (object.data.admin === true) {
       console.log("Succesfully logged in!");
    } else {
       console.log("Failed to log in, please try again");
@@ -38,11 +38,12 @@ const login = (object) => {
 
 console.log("Program starting...");
 
-const user = async () => {
+const userAdmin = async () => {
    const userData = await fetchUser();
-   login(userData);
+   console.log(userData);
+   login(userData.data);
 };
 
-user();
+userAdmin();
 
 console.log("Program complete!");
