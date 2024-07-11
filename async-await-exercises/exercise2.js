@@ -75,12 +75,13 @@ fetch2();
 //We can just delete the await operator and use the Promise.all method to call both fetch functions
 const fetchTotal = async () => {
    const fetchedFast = fetchFast();
-   //console.log(fetchedFast);
+   console.log(fetchedFast);
 
    const fetchedSlow = fetchSlow();
-   //console.log(fetchedSlow);
+   console.log(fetchedSlow);
 
    const result = await Promise.all([fetchedFast, fetchedSlow]);
+   console.log(result);
 
    const secondTimeStap = new Date();
    console.log(secondTimeStap - firstTimeStap);

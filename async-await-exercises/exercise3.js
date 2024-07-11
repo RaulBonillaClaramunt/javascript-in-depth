@@ -45,6 +45,12 @@ const candyMoney = async () => {
    //console.log("this are gottenCandies: ", gottenCandies);
    const moneyMade = await sellCandies(gottenCandies);
    console.log(moneyMade);
+   const time2 = new Date();
+   const timeLapse = time2 - time1;
+   console.log(`Program ends after ${timeLapse} milliseconds ;)`);
 };
+
+console.log("Program starts...");
+const time1 = new Date();
 
 candyMoney();
