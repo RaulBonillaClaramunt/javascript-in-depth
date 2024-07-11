@@ -34,3 +34,11 @@ console.log(viewsCopy);//prints [ [ 5, 10 ], [ 10, 20, 30, 40 ], [ 100, 200 ] ]
 //so as they are not primitives, both variables point at he same element in memory
 //while the last push adds an array that works as a primitive in viesCopy array
 //and thus is not getting copied onto views array
+
+const viewsCopy2 = [...viewsCopy, [30, 70]];
+viewsCopy2[0].pop();
+viewsCopy2[2].pop();
+
+console.log(views);//prints [ [ 5, 10 ], [ 10, 20, 30, 40 ] ]
+console.log(viewsCopy);
+console.log(viewsCopy2);

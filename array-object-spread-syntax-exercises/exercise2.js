@@ -18,3 +18,30 @@
        Print out both "animal" and "koala" again and observe the change.
        Does this make sense?
 */
+const animal = { name: "Koala", kingdom: "Australia", cute: true,
+    friends: [ { name: "Kangaroo" , kingdom: "Australia"} ] };
+
+const koala = {
+    ...animal,
+    tail: false,
+};
+
+console.log(animal);
+console.log(koala);
+console.log("-----");
+
+animal.cute = false;
+
+console.log(animal);//prints  cute: false
+console.log(koala);//prints  cute: true
+//it makes sense because cute is a primitive value in both objects
+console.log("-----");
+
+animal.friends[0].cute = true;
+
+console.log(animal);//prints  cute: false
+console.log(koala);//prints  cute: true
+//it makes sense because cute is nested inside friends array
+//thus it is a shallow copy and both animal and koala point at the same element
+//in memory, so chianging one changes the other
+console.log("-----");
