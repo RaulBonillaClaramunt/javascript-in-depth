@@ -40,7 +40,7 @@ const fetchSlow = () => {
 console.log("Program starting...");
 
 const firstTimeStap = new Date();
-/*
+/*fetchSlow runs after fetchFast is resolved:
 const fetchTotal = async () => {
    const fetchedFast = await fetchFast();
    console.log(fetchedFast);
@@ -53,16 +53,16 @@ const fetchTotal = async () => {
    console.log("Program complete!");
 };
 fetchTotal();
-*/
 
+//we can separate both fetchFast and FetchSlow and then call them separatedly:
 const fetch1 = async () => {
    const fetchedFast = await fetchFast();
-   console.log(fetchedFast);
+   //console.log(fetchedFast);
 };
 
 const fetch2 = async () => {
    const fetchedSlow = await fetchSlow();
-   console.log(fetchedSlow);
+   //console.log(fetchedSlow);
    const secondTimeStap = new Date();
    const timeElapsed = secondTimeStap - firstTimeStap;
    console.log(timeElapsed);//6005 milliseconds
@@ -71,3 +71,19 @@ const fetch2 = async () => {
 
 fetch1();
 fetch2();
+*/
+//We can just delete the await operator and use the Promise.all method to call both fetch functions
+const fetchTotal = async () => {
+   const fetchedFast = fetchFast();
+   //console.log(fetchedFast);
+
+   const fetchedSlow = fetchSlow();
+   //console.log(fetchedSlow);
+
+   const result = await Promise.all([fetchedFast, fetchedSlow]);
+
+   const secondTimeStap = new Date();
+   console.log(secondTimeStap - firstTimeStap);
+   console.log("Program complete!");
+};
+fetchTotal();
