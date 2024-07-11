@@ -16,3 +16,21 @@
 
     *Explain this behaviour
 */
+const views = [ [5, 10, 20], [10, 20, 30] ];
+
+const viewsCopy = [...views];
+
+console.log(views);
+console.log(viewsCopy);
+
+viewsCopy[1].push(40);
+viewsCopy[0].pop();
+
+viewsCopy.push([100, 200]);
+
+console.log(views);//prints [ [ 5, 10 ], [ 10, 20, 30, 40 ] ]
+console.log(viewsCopy);//prints [ [ 5, 10 ], [ 10, 20, 30, 40 ], [ 100, 200 ] ]
+//this happens because in the first two cases we are manipulating nested arrays
+//so as they are not primitives, both variables point at he same element in memory
+//while the last push adds an array that works as a primitive in viesCopy array
+//and thus is not getting copied onto views array
