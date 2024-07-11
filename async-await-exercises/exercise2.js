@@ -16,5 +16,58 @@
     6. Log out "Program complete!"
 
     7. How long does this take and why?
+    It takes 8 seconds because the await call for fetchSow won't trigger until
+    fetchFast is resolved
     8. How could you speed it up?
+    We could use the Promise.all method or we could just call them separatedly
 */
+const fetchFast = () => {
+   return new Promise((resolve, reject) => {
+      setTimeout(() => {
+      resolve("Fast Done!");
+      }, 2000);
+   });
+};
+
+const fetchSlow = () => {
+   return new Promise((resolve, reject) => {
+      setTimeout(() => {
+         resolve("Slow Done!");
+      }, 6000);
+   });
+};
+
+console.log("Program starting...");
+
+const firstTimeStap = new Date();
+/*
+const fetchTotal = async () => {
+   const fetchedFast = await fetchFast();
+   console.log(fetchedFast);
+
+   const fetchedSlow = await fetchSlow();
+   console.log(fetchedSlow);
+
+   const secondTimeStap = new Date();
+   console.log(secondTimeStap - firstTimeStap);//8011 milliseconds
+   console.log("Program complete!");
+};
+fetchTotal();
+*/
+
+const fetch1 = async () => {
+   const fetchedFast = await fetchFast();
+   console.log(fetchedFast);
+};
+
+const fetch2 = async () => {
+   const fetchedSlow = await fetchSlow();
+   console.log(fetchedSlow);
+   const secondTimeStap = new Date();
+   const timeElapsed = secondTimeStap - firstTimeStap;
+   console.log(timeElapsed);//6005 milliseconds
+   console.log("Program complete!");
+};
+
+fetch1();
+fetch2();
