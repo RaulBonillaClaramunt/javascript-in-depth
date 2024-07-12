@@ -16,29 +16,30 @@
 
 const characters = ['Han Solo', 'Spock', 'Darth Vader', 'Yoda', 'Neo', 'Sarah Connor'];
 
-const doubleNameCharacters1 = [];
-
-characters.filter((name) => {
+const doubleNameCharacters1 = characters.filter((name) => {
     if (name.includes(' ')) {
-        doubleNameCharacters1.push(name);
+        return true;
     } else {
         return false;
     }
 });
 
-let doubleNameCharacters2 = [];
-characters.filter((name) => {
+let doubleNameCharacters2 = characters.filter((name) => {
     return (name.includes(' '))
-    ? doubleNameCharacters2.push(name)
+    ? true
     : false;
 });
 
-let doubleNameCharacters3 = [];
-characters.filter((name) =>
-    name.includes(' ') ? doubleNameCharacters3.push(name) : false
+let doubleNameCharacters3 = characters.filter((name) =>
+    name.includes(' ') ? true : false
 );
 
+const doubleNameCharacters4 = characters.filter((character) =>
+    character.includes(' ')
+//we can even get rid of "? true : false" since includes returns a boolean
+);
 
 console.log(doubleNameCharacters1);
 console.log(doubleNameCharacters2);
 console.log(doubleNameCharacters3);
+console.log(doubleNameCharacters4);
