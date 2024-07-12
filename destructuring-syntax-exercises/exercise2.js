@@ -20,4 +20,12 @@ store.set("Cups", 46);
 store.set("Candles", 121);
 store.set("Vases", 15);
 
-console.log(store);
+for (const item of [ element ] = store) {
+   console.log( item[0] + " => " + item[1]);
+}
+
+for (const [items, quantity] of store) {
+   console.log(items, " => ", quantity);
+}
+
+//console.log(store); //prints Map(3) { 'Cups' => 46, 'Candles' => 121, 'Vases' => 15 }
