@@ -14,16 +14,31 @@
 */
 
 
-let characters = ['Han Solo', 'Spock', 'Darth Vader', 'Yoda', 'Neo', 'Sarah Connor'];
+const characters = ['Han Solo', 'Spock', 'Darth Vader', 'Yoda', 'Neo', 'Sarah Connor'];
 
-let newArray = [];
+const doubleNameCharacters1 = [];
 
-characters.forEach((el) => {
-    if (el.includes(' ')) {
-        newArray.push(el);
+characters.filter((name) => {
+    if (name.includes(' ')) {
+        doubleNameCharacters1.push(name);
+    } else {
+        return false;
     }
-
-
 });
 
-return newArray;
+let doubleNameCharacters2 = [];
+characters.filter((name) => {
+    return (name.includes(' '))
+    ? doubleNameCharacters2.push(name)
+    : false;
+});
+
+let doubleNameCharacters3 = [];
+characters.filter((name) =>
+    name.includes(' ') ? doubleNameCharacters3.push(name) : false
+);
+
+
+console.log(doubleNameCharacters1);
+console.log(doubleNameCharacters2);
+console.log(doubleNameCharacters3);

@@ -39,5 +39,11 @@ const nWizards = wizards.map((wizard) => {
 }
 );
 
+//short expression syntax:
+const shortWizards = wizards.map((wizard) =>
+    wizard.includes('n') ? wizard.replace('n', '*') : wizard.toUpperCase()
+);
+
 console.log(ifWizards);
 console.log(nWizards);
+console.log(shortWizards);
