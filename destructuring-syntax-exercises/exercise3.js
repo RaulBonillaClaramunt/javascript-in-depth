@@ -31,7 +31,7 @@ const xyzCalc = (object) => {
    return 5 * x - 2 * y -z;
 };
 */
-const xyzCalc = ({x, y, z} = object) => {
+const xyzCalc = ({x, y, z}) => {
    return 5 * x - 2 * y -z;
 };
 

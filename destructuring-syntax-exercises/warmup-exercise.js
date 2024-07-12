@@ -8,3 +8,7 @@
     3. Print out your variables containing "Lion" and "Rabbit"
 */
 const jungle = ["Monkey", "Lion", "Panda", "Rabbit", "Squirrel"];
+
+[, lion, , rabbit] = jungle;
+
+console.log(lion, rabbit);
