@@ -13,3 +13,31 @@
     BONUS: Can you shorten this with the short "arrow function
            expression" syntax?
 */
+
+const wizards = ["Gandalf", "Voldemort", "Harry", "Jafar", "Saruman", "Merlin"];
+
+const ifWizards = wizards.map((wizard) => {
+    if (wizard.includes('n')) {
+        let wizardLetters = wizard.split('');
+        //console.log(wizardLetters);
+        let i = wizardLetters.indexOf('n');
+        //console.log(i);
+        wizardLetters.splice(i, 1, '*');
+        //console.log(finalName);
+
+        return wizardLetters.join('');
+
+    } else {
+        return wizard.toUpperCase();
+    }
+});
+
+const nWizards = wizards.map((wizard) => {
+    return (wizard.includes('n'))
+     ? wizard.replace('n', '*')
+     : wizard.toUpperCase();
+}
+);
+
+console.log(ifWizards);
+console.log(nWizards);
