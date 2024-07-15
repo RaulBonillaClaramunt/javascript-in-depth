@@ -7,16 +7,16 @@
 */
 
 const randomNumber = function*() {
-   let i = 0:
+   let i = 0;
 
    while(true) {
-      yield i;
+      yield Math.floor(Math.random() * i);
       i++;
    }
 }
 
-const
+const generatorObject = randomNumber();
 
-for (let index; index < 10; index++) {
-
+for (let index = 0; index < 10; index++) {
+    console.log(generatorObject.next());
 }
