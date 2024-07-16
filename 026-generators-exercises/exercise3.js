@@ -24,3 +24,16 @@
        Eg: 5 Avocado
            10 Soup
 */
+const getRandomNumber = function*() {
+   for (let i = 0; i < 5; i++) {
+      yield Math.floor(Math.random() * (10 - 1 + 1) + 1);
+   }
+}
+
+const groceryList = function*() {
+   const groceries = ["Avocado", "Cookie", "Milk", "Soup", "Soda"];
+}
+
+const generatorObjectRandom = getRandomNumber();
+
+const generatorObjectGroceries = groceryList();
