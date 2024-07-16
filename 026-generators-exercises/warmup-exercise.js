@@ -6,3 +6,18 @@
        function and iterate through the generator using a
        for...of loop.
 */
+const countTo10 = function*() {
+   let i = 0;
+
+   while (i <= 10) {
+      yield i;
+      i++;
+   }
+};
+
+const generatorObject = countTo10();
+console.log(generatorObject.next());
+
+for (const value of generatorObject) {
+   console.log(value);
+}
