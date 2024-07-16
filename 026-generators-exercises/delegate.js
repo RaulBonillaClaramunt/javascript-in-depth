@@ -23,3 +23,8 @@ const generatorObject2 = counter2();
 for (const value of generatorObject2) {
     console.log(value);
 }
+
+/*
+in fact, you could pass any iterable thorugh a yield*
+even another generator object
+*/
