@@ -18,3 +18,15 @@
     5. Log out the prototype of cleo and taylor. What is
        happening? What about just taylor?
 */
+const cleo = Person("Cleo");
+const taylor = new Person("Taylor");
+
+//console.log(Object.getOwnPropertyNames(cleo));//it returns error
+//console.log(Object.getOwnPropertyNames(cleo.__proto__));//it returns error
+console.log(Object.getOwnPropertyNames(taylor));
+console.log(taylor.name);
+console.log(Object.getOwnPropertyNames(taylor.__proto__));
+console.log(Object.getOwnPropertyNames(taylor.__proto__.constructor));
+console.log(taylor.__proto__.constructor.name);
+console.log(Object.getOwnPropertyNames(taylor.__proto__.constructor.name));
+console.log(Object.getOwnPropertyNames(taylor.__proto__.__proto__));
