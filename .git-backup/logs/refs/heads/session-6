@@ -1,0 +1,22 @@
+0000000000000000000000000000000000000000 2422934efa44fe14211eebca779d864a8d2e9d2b Raul <raulbonillaclaramunt@email.com> 1719979415 +0900	branch: Created from HEAD
+2422934efa44fe14211eebca779d864a8d2e9d2b e4df23e24b86380c2850d6ce6a2818054dbff2d2 Raul <raulbonillaclaramunt@email.com> 1719979771 +0900	commit: new set of exercises for Sets
+e4df23e24b86380c2850d6ce6a2818054dbff2d2 754bf5607c98d737db520c1ec8862c9e9a6146a0 Raul <raulbonillaclaramunt@email.com> 1720008596 +0900	commit: warmup exercise solved
+754bf5607c98d737db520c1ec8862c9e9a6146a0 017d543dd62032f50b15e8b5440cfc3756061d59 Raul <raulbonillaclaramunt@email.com> 1720008802 +0900	commit: exercise-1 solved
+017d543dd62032f50b15e8b5440cfc3756061d59 b100e8dcd3d311fc0836246974787b7d9ca092ab Raul <raulbonillaclaramunt@email.com> 1720009188 +0900	commit: exercise-2 solved
+b100e8dcd3d311fc0836246974787b7d9ca092ab e78c152e37f8f28d8712a5861b6304fcc32006c9 Raul <raulbonillaclaramunt@email.com> 1720009484 +0900	commit: kickstart exercise-3 Sets
+e78c152e37f8f28d8712a5861b6304fcc32006c9 f5c3c1e89f9acd300e0775781fc20366863db751 Raul <raulbonillaclaramunt@email.com> 1720043150 +0900	commit: improved warmup :)
+f5c3c1e89f9acd300e0775781fc20366863db751 15aec945a9996689808af67a0b178fe48f70ad0f Raul <raulbonillaclaramunt@email.com> 1720043398 +0900	commit: exercise-1 improved solution
+15aec945a9996689808af67a0b178fe48f70ad0f 6747aef3e060d23e83dfa4fc7435e0658f51daeb Raul <raulbonillaclaramunt@email.com> 1720044062 +0900	commit: attempt to solve exercise-3
+6747aef3e060d23e83dfa4fc7435e0658f51daeb 28db974cece4bf5bef0bd55c31ac36abaa1468a4 Raul <raulbonillaclaramunt@email.com> 1720046105 +0900	commit: exercise-3 solved
+28db974cece4bf5bef0bd55c31ac36abaa1468a4 06a176904e7a489791f0e43f28934a4d7fb26c97 Raul <raulbonillaclaramunt@email.com> 1720046661 +0900	commit: new set of for of loop exercises uploaded
+06a176904e7a489791f0e43f28934a4d7fb26c97 138b784f2f67cc04462dc1602af1cbed356bee17 Raul <raulbonillaclaramunt@email.com> 1720047863 +0900	commit: warmup exercise solved
+138b784f2f67cc04462dc1602af1cbed356bee17 cc64324d988c86fca212036c30bf9a8543fc3026 Raul <raulbonillaclaramunt@email.com> 1720048582 +0900	commit: exercise-1 solved
+cc64324d988c86fca212036c30bf9a8543fc3026 4ce1967eb5ab8c4d8d00f0e3a44a2338e1fad96c Raul <raulbonillaclaramunt@email.com> 1720051518 +0900	commit: exercise-2 solved
+4ce1967eb5ab8c4d8d00f0e3a44a2338e1fad96c a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 Raul <raulbonillaclaramunt@email.com> 1720054765 +0900	commit: exercise-2 solvednode
+a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 8d28c4a60d0e361a48e577e181e0a308e4a26c11 Raul <raulbonillaclaramunt@email.com> 1720065303 +0900	commit: exercise-3 solved
+8d28c4a60d0e361a48e577e181e0a308e4a26c11 be6ffe62c81065a3763ca0c885ed0c6d4c3da0b1 Raul <raulbonillaclaramunt@email.com> 1720128283 +0900	commit: kickstart Black Jack Game
+be6ffe62c81065a3763ca0c885ed0c6d4c3da0b1 670a1e54503f32741b50090294ae0186ad2133c9 Raul <raulbonillaclaramunt@email.com> 1720131613 +0900	commit: developing first steps of Black Jack
+670a1e54503f32741b50090294ae0186ad2133c9 1c409391cd05f4543719d3fdfcc1cf854c30a788 Raul <raulbonillaclaramunt@email.com> 1720136092 +0900	commit: further developing Project Black Jack
+1c409391cd05f4543719d3fdfcc1cf854c30a788 670a1e54503f32741b50090294ae0186ad2133c9 Raul <raulbonillaclaramunt@email.com> 1720136445 +0900	reset: moving to HEAD~1
+670a1e54503f32741b50090294ae0186ad2133c9 be6ffe62c81065a3763ca0c885ed0c6d4c3da0b1 Raul <raulbonillaclaramunt@email.com> 1720136450 +0900	reset: moving to HEAD~1
+be6ffe62c81065a3763ca0c885ed0c6d4c3da0b1 a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 Raul <raulbonillaclaramunt@email.com> 1720136465 +0900	reset: moving to HEAD~2
