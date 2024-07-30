@@ -19,3 +19,24 @@ const pet = {
     type: "fish",
     age: 2
 }
+console.log(Object.getOwnPropertyNames(pet.__proto__));
+
+Object.prototype.sayHello = function() {
+   console.log(this);
+   console.log(`${this.name} is a ${this.type} and is ${this.age} years old.
+      ${this.name} says Hi!`)
+}
+/*
+pet.__proto__.sayHello = function() {
+   console.log(`${name} is a ${type} and is ${age} years old. ${name} says Hi!`)
+}*/
+
+pet.sayHello();
+
+const pet2 = {
+   name: "Foo",
+   type: "wombat",
+   age: 3,
+}
+
+pet2.sayHello();
