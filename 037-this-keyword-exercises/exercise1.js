@@ -34,3 +34,18 @@ const book = {
         }
     }
 };
+
+book.characters.list();
+console.log("---");
+
+const book2 = {
+    characters: {
+        mainChars: ["Draco", "Severus", "Voldemort"],
+    }
+};
+
+//we could solve the problem like this:
+book.characters.list.call(book2.characters);
+console.log("---");
+//and we could also solve it passing the object directly onto the call:
+book.characters.list.call({mainChars: ["Draco", "Severus", "Voldemort"]});
