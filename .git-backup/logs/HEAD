@@ -1,0 +1,158 @@
+0000000000000000000000000000000000000000 03b673a28be9b541290212c31763419e5f8b289d Raul <raulbonillaclaramunt@email.com> 1719048142 +0900	clone: from https://github.com/RaulBonillaClaramunt/javascript-in-depth.git
+03b673a28be9b541290212c31763419e5f8b289d 03b673a28be9b541290212c31763419e5f8b289d Raul <raulbonillaclaramunt@email.com> 1719049561 +0900	checkout: moving from main to session-1
+03b673a28be9b541290212c31763419e5f8b289d 03724f44d6c39bdce2c3a1d132b9bfdc22051a8e Raul <raulbonillaclaramunt@email.com> 1719049865 +0900	commit: warm-up exercise solved
+03724f44d6c39bdce2c3a1d132b9bfdc22051a8e 3fca5b80e4731c8f4acaa2d1d6ffab412c72e9cb Raul <raulbonillaclaramunt@email.com> 1719050814 +0900	commit: exercise-1 solved
+3fca5b80e4731c8f4acaa2d1d6ffab412c72e9cb e5bc88b09b60b43dc38c1b17ed1b8b7f26819af9 Raul <raulbonillaclaramunt@email.com> 1719095327 +0900	commit: exercise 2 solved using Math.floor and Math.random
+e5bc88b09b60b43dc38c1b17ed1b8b7f26819af9 56ee3547318f7e0307ea1c8b4de7b056cede637d Raul <raulbonillaclaramunt@email.com> 1719095822 +0900	commit: exercise 2 solved using Math.floor and Math.random PROPERLY ;)
+56ee3547318f7e0307ea1c8b4de7b056cede637d 6bcc682ac3501d7c01cf6cf2070520d0e3e85601 Raul <raulbonillaclaramunt@email.com> 1719098023 +0900	commit: exercise 3 solved
+6bcc682ac3501d7c01cf6cf2070520d0e3e85601 6bcc682ac3501d7c01cf6cf2070520d0e3e85601 Raul <raulbonillaclaramunt@email.com> 1719098812 +0900	checkout: moving from session-1 to session-2
+6bcc682ac3501d7c01cf6cf2070520d0e3e85601 663a6393d60491c85b0cad34f891ffe199ead3c6 Raul <raulbonillaclaramunt@email.com> 1719137390 +0900	commit: update exercises directory
+663a6393d60491c85b0cad34f891ffe199ead3c6 89aceb007ed982ae453478bd66b876c2a2eb5352 Raul <raulbonillaclaramunt@email.com> 1719183828 +0900	commit: update JSID directories
+89aceb007ed982ae453478bd66b876c2a2eb5352 7c6c2c999d32052c7ca4f0941df7c15d28bb00c6 Raul <raulbonillaclaramunt@email.com> 1719184043 +0900	commit: warmup exercise solved
+7c6c2c999d32052c7ca4f0941df7c15d28bb00c6 89aceb007ed982ae453478bd66b876c2a2eb5352 Raul <raulbonillaclaramunt@email.com> 1719184153 +0900	reset: moving to HEAD~
+89aceb007ed982ae453478bd66b876c2a2eb5352 000186068555829f37f1652da4a953f87e0bc3ca Raul <raulbonillaclaramunt@email.com> 1719184223 +0900	commit: mend commit error
+000186068555829f37f1652da4a953f87e0bc3ca 1837ba44e7dbfa8e7a74d9ab31e059a2fe1e55c1 Raul <raulbonillaclaramunt@email.com> 1719184844 +0900	commit: warmup and exercise 1 solved
+1837ba44e7dbfa8e7a74d9ab31e059a2fe1e55c1 58a13d9ad3aa01b88a8efbf9e249cdd476cddf3f Raul <raulbonillaclaramunt@email.com> 1719186124 +0900	commit: exercise2 solved
+58a13d9ad3aa01b88a8efbf9e249cdd476cddf3f 2f98241395ab8699e94bd2f29e112cd335fca2e5 Raul <raulbonillaclaramunt@email.com> 1719186939 +0900	commit: update exercise2 solution
+2f98241395ab8699e94bd2f29e112cd335fca2e5 6d03c41e40cadb8af14e8a66450eb79426e2cfdc Raul <raulbonillaclaramunt@email.com> 1719192112 +0900	commit: exercise3 solved
+6d03c41e40cadb8af14e8a66450eb79426e2cfdc 6dc78f4038db8397e3927fa8dd235887538deeac Raul <raulbonillaclaramunt@email.com> 1719192453 +0900	commit: update on exercise3 solution
+6dc78f4038db8397e3927fa8dd235887538deeac f0677986454e050debcbe509e08b4256def749e8 Raul <raulbonillaclaramunt@email.com> 1719192524 +0900	commit: start BONUS exercise
+f0677986454e050debcbe509e08b4256def749e8 8ada8ac162636831f5c68141d5ab738b50cd014a Raul <raulbonillaclaramunt@email.com> 1719234643 +0900	commit: BONUS exercise solved
+8ada8ac162636831f5c68141d5ab738b50cd014a 8ada8ac162636831f5c68141d5ab738b50cd014a Raul <raulbonillaclaramunt@email.com> 1719234776 +0900	checkout: moving from session-2 to session-3
+8ada8ac162636831f5c68141d5ab738b50cd014a 7f5bd604d20a06e4438988189e908e3b48dc7c75 Raul <raulbonillaclaramunt@email.com> 1719266280 +0900	commit: warmUp exercise solved
+7f5bd604d20a06e4438988189e908e3b48dc7c75 4d2beada68f704dd54feb5ec1eb6fcc0d92273a7 Raul <raulbonillaclaramunt@email.com> 1719266901 +0900	commit: exercise1 solved
+4d2beada68f704dd54feb5ec1eb6fcc0d92273a7 1f9a7b5de57c9b6bdca993f9b5fa5d3546c5b7ac Raul <raulbonillaclaramunt@email.com> 1719267985 +0900	commit: exercise2 solved
+1f9a7b5de57c9b6bdca993f9b5fa5d3546c5b7ac b3dc9737f2265e3098e108818a8ac3af57f96942 Raul <raulbonillaclaramunt@email.com> 1719268903 +0900	commit: BONUS-exercise1 solved
+b3dc9737f2265e3098e108818a8ac3af57f96942 1238c482d4b4c7d747f731965eb68b8d03dbef28 Raul <raulbonillaclaramunt@email.com> 1719269095 +0900	commit (amend): BONUS-exercise1 + exercise3 solved + BONUS2 created
+1238c482d4b4c7d747f731965eb68b8d03dbef28 1238c482d4b4c7d747f731965eb68b8d03dbef28 Raul <raulbonillaclaramunt@email.com> 1719353769 +0900	checkout: moving from session-3 to session-4
+1238c482d4b4c7d747f731965eb68b8d03dbef28 a9cc14691ca78455b091a96d1f40c1fbab3fd61e Raul <raulbonillaclaramunt@email.com> 1719446906 +0900	commit: exercise3 of Maps solved
+a9cc14691ca78455b091a96d1f40c1fbab3fd61e 8fdb16e90e887ee7c10f60ccd27e13bad06ae65f Raul <raulbonillaclaramunt@email.com> 1719448012 +0900	commit: kickstart BONUS-exercise2
+8fdb16e90e887ee7c10f60ccd27e13bad06ae65f 552fae51b6bcdd0c9edb094a3031d6df4d042a4f Raul <raulbonillaclaramunt@email.com> 1719448887 +0900	commit: exercise2 improved solution
+552fae51b6bcdd0c9edb094a3031d6df4d042a4f b081326db46050fb95b5daf908a42931c6611a65 Raul <raulbonillaclaramunt@email.com> 1719449239 +0900	commit: exercise3 solution improved
+b081326db46050fb95b5daf908a42931c6611a65 28ab56863b9d6d1bd29951986c1d10836f2266d7 Raul <raulbonillaclaramunt@email.com> 1719449835 +0900	commit: BONUS-exercise1 solution improved
+28ab56863b9d6d1bd29951986c1d10836f2266d7 1a76fcf2423aeef0bf0f7a2610151a0eb4285b2c Raul <raulbonillaclaramunt@email.com> 1719451582 +0900	commit: BONUS-exercise2 solved
+1a76fcf2423aeef0bf0f7a2610151a0eb4285b2c 1a76fcf2423aeef0bf0f7a2610151a0eb4285b2c Raul <raulbonillaclaramunt@email.com> 1719451838 +0900	checkout: moving from session-4 to session-5
+1a76fcf2423aeef0bf0f7a2610151a0eb4285b2c bd3408edc35754db00155ef3c0f6e5e388e4b8de Raul <raulbonillaclaramunt@email.com> 1719824539 +0900	commit: JSID recursion exercise warmup
+bd3408edc35754db00155ef3c0f6e5e388e4b8de 78995fa34bbfec223a8e01206b8b8458701e632a Raul <raulbonillaclaramunt@email.com> 1719825548 +0900	commit: recursion warmup-exercise solved
+78995fa34bbfec223a8e01206b8b8458701e632a deb1130466d47bc8728b60ba12d1c1007130e323 Raul <raulbonillaclaramunt@email.com> 1719826386 +0900	commit: exercise-1.js on the works
+deb1130466d47bc8728b60ba12d1c1007130e323 81e14b2cf77e83495f7be338079d815c97e5c962 Raul <raulbonillaclaramunt@email.com> 1719874546 +0900	commit: exercise-1 solved - first solution
+81e14b2cf77e83495f7be338079d815c97e5c962 b007d989acb9dac73fb9f3864550a7f53fe80587 Raul <raulbonillaclaramunt@email.com> 1719875804 +0900	commit: exercise-1 solved - second solution
+b007d989acb9dac73fb9f3864550a7f53fe80587 84bda1db0e2bb664e79b32172509dd37eac65e5f Raul <raulbonillaclaramunt@email.com> 1719876242 +0900	commit: start exercise-2
+84bda1db0e2bb664e79b32172509dd37eac65e5f c3748d66dd14ef36bcd57f14a6277c766b9d8ce6 Raul <raulbonillaclaramunt@email.com> 1719881754 +0900	commit: recusrsion-example with console.log explanations
+c3748d66dd14ef36bcd57f14a6277c766b9d8ce6 c2e4430b3486bcc46d8bc04e64ec3dfd5e2e83fc Raul <raulbonillaclaramunt@email.com> 1719917807 +0900	commit: developing exercise-2
+c2e4430b3486bcc46d8bc04e64ec3dfd5e2e83fc 857742d3849c93de865fd8eb28a4c071d0f28ed9 Raul <raulbonillaclaramunt@email.com> 1719919295 +0900	commit: exercise-2 solved
+857742d3849c93de865fd8eb28a4c071d0f28ed9 20456e30d3c3663660ee3331fbcf079f8609e260 Raul <raulbonillaclaramunt@email.com> 1719919751 +0900	commit: kickstart exercise-3
+20456e30d3c3663660ee3331fbcf079f8609e260 4bded06c851a815502fa1bb6b5b65bbe199c9063 Raul <raulbonillaclaramunt@email.com> 1719922178 +0900	commit: kickstart BONUS-EXERCISE
+4bded06c851a815502fa1bb6b5b65bbe199c9063 6f2293ea38a1b1e55eafc9fe034dfe2bee609a91 Raul <raulbonillaclaramunt@email.com> 1719963182 +0900	commit: exercise-3 solved
+6f2293ea38a1b1e55eafc9fe034dfe2bee609a91 81e0f28f7bc65437dc4aa6c0c780a13fa1014eab Raul <raulbonillaclaramunt@email.com> 1719969359 +0900	commit: alternative warmup exercise solution
+81e0f28f7bc65437dc4aa6c0c780a13fa1014eab 2422934efa44fe14211eebca779d864a8d2e9d2b Raul <raulbonillaclaramunt@email.com> 1719976447 +0900	commit: BONUS-EXERCISE being developed
+2422934efa44fe14211eebca779d864a8d2e9d2b 2422934efa44fe14211eebca779d864a8d2e9d2b Raul <raulbonillaclaramunt@email.com> 1719979415 +0900	checkout: moving from session-5 to session-6
+2422934efa44fe14211eebca779d864a8d2e9d2b e4df23e24b86380c2850d6ce6a2818054dbff2d2 Raul <raulbonillaclaramunt@email.com> 1719979771 +0900	commit: new set of exercises for Sets
+e4df23e24b86380c2850d6ce6a2818054dbff2d2 754bf5607c98d737db520c1ec8862c9e9a6146a0 Raul <raulbonillaclaramunt@email.com> 1720008596 +0900	commit: warmup exercise solved
+754bf5607c98d737db520c1ec8862c9e9a6146a0 017d543dd62032f50b15e8b5440cfc3756061d59 Raul <raulbonillaclaramunt@email.com> 1720008802 +0900	commit: exercise-1 solved
+017d543dd62032f50b15e8b5440cfc3756061d59 b100e8dcd3d311fc0836246974787b7d9ca092ab Raul <raulbonillaclaramunt@email.com> 1720009188 +0900	commit: exercise-2 solved
+b100e8dcd3d311fc0836246974787b7d9ca092ab e78c152e37f8f28d8712a5861b6304fcc32006c9 Raul <raulbonillaclaramunt@email.com> 1720009484 +0900	commit: kickstart exercise-3 Sets
+e78c152e37f8f28d8712a5861b6304fcc32006c9 f5c3c1e89f9acd300e0775781fc20366863db751 Raul <raulbonillaclaramunt@email.com> 1720043150 +0900	commit: improved warmup :)
+f5c3c1e89f9acd300e0775781fc20366863db751 15aec945a9996689808af67a0b178fe48f70ad0f Raul <raulbonillaclaramunt@email.com> 1720043398 +0900	commit: exercise-1 improved solution
+15aec945a9996689808af67a0b178fe48f70ad0f 6747aef3e060d23e83dfa4fc7435e0658f51daeb Raul <raulbonillaclaramunt@email.com> 1720044062 +0900	commit: attempt to solve exercise-3
+6747aef3e060d23e83dfa4fc7435e0658f51daeb 28db974cece4bf5bef0bd55c31ac36abaa1468a4 Raul <raulbonillaclaramunt@email.com> 1720046105 +0900	commit: exercise-3 solved
+28db974cece4bf5bef0bd55c31ac36abaa1468a4 06a176904e7a489791f0e43f28934a4d7fb26c97 Raul <raulbonillaclaramunt@email.com> 1720046661 +0900	commit: new set of for of loop exercises uploaded
+06a176904e7a489791f0e43f28934a4d7fb26c97 138b784f2f67cc04462dc1602af1cbed356bee17 Raul <raulbonillaclaramunt@email.com> 1720047863 +0900	commit: warmup exercise solved
+138b784f2f67cc04462dc1602af1cbed356bee17 cc64324d988c86fca212036c30bf9a8543fc3026 Raul <raulbonillaclaramunt@email.com> 1720048582 +0900	commit: exercise-1 solved
+cc64324d988c86fca212036c30bf9a8543fc3026 4ce1967eb5ab8c4d8d00f0e3a44a2338e1fad96c Raul <raulbonillaclaramunt@email.com> 1720051518 +0900	commit: exercise-2 solved
+4ce1967eb5ab8c4d8d00f0e3a44a2338e1fad96c a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 Raul <raulbonillaclaramunt@email.com> 1720054765 +0900	commit: exercise-2 solvednode
+a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 8d28c4a60d0e361a48e577e181e0a308e4a26c11 Raul <raulbonillaclaramunt@email.com> 1720065303 +0900	commit: exercise-3 solved
+8d28c4a60d0e361a48e577e181e0a308e4a26c11 be6ffe62c81065a3763ca0c885ed0c6d4c3da0b1 Raul <raulbonillaclaramunt@email.com> 1720128283 +0900	commit: kickstart Black Jack Game
+be6ffe62c81065a3763ca0c885ed0c6d4c3da0b1 670a1e54503f32741b50090294ae0186ad2133c9 Raul <raulbonillaclaramunt@email.com> 1720131613 +0900	commit: developing first steps of Black Jack
+670a1e54503f32741b50090294ae0186ad2133c9 1c409391cd05f4543719d3fdfcc1cf854c30a788 Raul <raulbonillaclaramunt@email.com> 1720136092 +0900	commit: further developing Project Black Jack
+1c409391cd05f4543719d3fdfcc1cf854c30a788 670a1e54503f32741b50090294ae0186ad2133c9 Raul <raulbonillaclaramunt@email.com> 1720136445 +0900	reset: moving to HEAD~1
+670a1e54503f32741b50090294ae0186ad2133c9 be6ffe62c81065a3763ca0c885ed0c6d4c3da0b1 Raul <raulbonillaclaramunt@email.com> 1720136450 +0900	reset: moving to HEAD~1
+be6ffe62c81065a3763ca0c885ed0c6d4c3da0b1 a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 Raul <raulbonillaclaramunt@email.com> 1720136465 +0900	reset: moving to HEAD~2
+a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 Raul <raulbonillaclaramunt@email.com> 1720136696 +0900	checkout: moving from session-6 to session-7
+a7d5a036abccd4529ddb5af1dc7d7d9ffdba60e2 87f91f19b746b310c9c6f44151a279d7354746a9 Raul <raulbonillaclaramunt@email.com> 1720136728 +0900	commit: directory update
+87f91f19b746b310c9c6f44151a279d7354746a9 8b92df32292975d66bbda9eb826ae533d009b2f8 Raul <raulbonillaclaramunt@email.com> 1720146779 +0900	commit: pushing forward Porject Black Jack
+8b92df32292975d66bbda9eb826ae533d009b2f8 a2520e85deb01b4ddf1ba983f3166c9acf24ca6e Raul <raulbonillaclaramunt@email.com> 1720159346 +0900	commit: Project Black Jack developing
+a2520e85deb01b4ddf1ba983f3166c9acf24ca6e b8bbbea729de6e49a7c541f93be2c918ab4d7b5a Raul <raulbonillaclaramunt@email.com> 1720221126 +0900	commit: Black Jack close to finished, needs to be unbugged
+b8bbbea729de6e49a7c541f93be2c918ab4d7b5a 9246b36a35db23cbcbf8851f3e38380560b27eb1 Raul <raulbonillaclaramunt@email.com> 1720222068 +0900	commit: Project Black Jack ended ;)
+9246b36a35db23cbcbf8851f3e38380560b27eb1 4f3d0470071331c8e5d80d15198be6c7cbdbd4dd Raul <raulbonillaclaramunt@email.com> 1720299786 +0900	commit: Black Jack Porject version 2 of code kickstart
+4f3d0470071331c8e5d80d15198be6c7cbdbd4dd 9989c0c3dfce2007519ee2e3bd6169e8ab8c9916 Raul <raulbonillaclaramunt@email.com> 1720301418 +0900	commit: further Black Jack version 2 developing
+9989c0c3dfce2007519ee2e3bd6169e8ab8c9916 362567d2d2c3a5d3bc73fcce0415ad0b205bc78f Raul <raulbonillaclaramunt@email.com> 1720356127 +0900	commit: developing alternative solution to Project Black Jack
+362567d2d2c3a5d3bc73fcce0415ad0b205bc78f be9858fb9d9cc775c999303ade5b99faed11b194 Raul <raulbonillaclaramunt@email.com> 1720360697 +0900	commit: further developement of Black Jack version2
+be9858fb9d9cc775c999303ade5b99faed11b194 bfde12ba0271b749ac567e8bd0ee3fd6d8b63e1c Raul <raulbonillaclaramunt@email.com> 1720401545 +0900	commit: Black Jack 2nd Version running ;)
+bfde12ba0271b749ac567e8bd0ee3fd6d8b63e1c bfde12ba0271b749ac567e8bd0ee3fd6d8b63e1c Raul <raulbonillaclaramunt@email.com> 1720407245 +0900	checkout: moving from session-7 to session-8
+bfde12ba0271b749ac567e8bd0ee3fd6d8b63e1c 34785e08096946624bb9d150ef6807c349edc427 Raul <raulbonillaclaramunt@email.com> 1720409639 +0900	commit: Promises theory - practical exmple
+34785e08096946624bb9d150ef6807c349edc427 8921532c39458dae55c99c7631ae2992d6e5e94d Raul <raulbonillaclaramunt@email.com> 1720477240 +0900	commit: Promises example developed
+8921532c39458dae55c99c7631ae2992d6e5e94d 06c37319e081ec0786b4758517998e13a96b8f41 Raul <raulbonillaclaramunt@email.com> 1720478391 +0900	commit: Promises warmup exercise solved
+06c37319e081ec0786b4758517998e13a96b8f41 028f9841a8609177967781e5fcd2555167e2bb9f Raul <raulbonillaclaramunt@email.com> 1720478894 +0900	commit: exercise1 Promises solved
+028f9841a8609177967781e5fcd2555167e2bb9f 76f52cc802bfef9ee5f0df6508db7292fcbb1baf Raul <raulbonillaclaramunt@email.com> 1720487231 +0900	commit: warmup exercise alt version solved
+76f52cc802bfef9ee5f0df6508db7292fcbb1baf 80e7f42856f72e44260020cba853fdcd54f2a926 Raul <raulbonillaclaramunt@email.com> 1720487571 +0900	commit: Promises exercise1 alt solution solved
+80e7f42856f72e44260020cba853fdcd54f2a926 898fe0d1bd55c4e2bf09967cfa7078cff7507eb5 Raul <raulbonillaclaramunt@email.com> 1720488242 +0900	commit: exercise2 Promises solved
+898fe0d1bd55c4e2bf09967cfa7078cff7507eb5 50e9b614fbba52c6791f466a332d196c28a017a2 Raul <raulbonillaclaramunt@email.com> 1720488773 +0900	commit: Promises exercise2 alt solution solved
+50e9b614fbba52c6791f466a332d196c28a017a2 083e5cf41fd7030d64057322c19b2773db5bb01c Raul <raulbonillaclaramunt@email.com> 1720490320 +0900	commit: Promises exercise 3 solved
+083e5cf41fd7030d64057322c19b2773db5bb01c 1d94a51e793912c348b1365f375d31c8488109b7 Raul <raulbonillaclaramunt@email.com> 1720492660 +0900	commit: Promises exercise3.js solved and improved
+1d94a51e793912c348b1365f375d31c8488109b7 4176b7e035e3c281e532f406ac597a23035ea4c7 Raul <raulbonillaclaramunt@email.com> 1720494874 +0900	commit: Promises BONUS-exercise solved - using Promise.all method
+4176b7e035e3c281e532f406ac597a23035ea4c7 b9c44e920115c39192a2ea0842c3f77116f5a88f Raul <raulbonillaclaramunt@email.com> 1720495326 +0900	commit: BONUS-exercise improved solution
+b9c44e920115c39192a2ea0842c3f77116f5a88f 02b0bbd2e0c6705aac38338a048032f01fdb6392 Raul <raulbonillaclaramunt@email.com> 1720496130 +0900	commit: warmup exercise set
+02b0bbd2e0c6705aac38338a048032f01fdb6392 c9ad9b955db0cf922b4027f62065d4df58d6d5e5 Raul <raulbonillaclaramunt@email.com> 1720496256 +0900	commit: error-handling exercises set to go
+c9ad9b955db0cf922b4027f62065d4df58d6d5e5 98fb0c943fa7c2ddd0e756e1e05222ac85a918bb Raul <raulbonillaclaramunt@email.com> 1720564678 +0900	commit: error handling examples coded
+98fb0c943fa7c2ddd0e756e1e05222ac85a918bb 84d87417deb6e92cbc1a56dc5fd71200c83d3489 Raul <raulbonillaclaramunt@email.com> 1720565005 +0900	commit: warmup exercise solved
+84d87417deb6e92cbc1a56dc5fd71200c83d3489 346d89524fb46ac7380a08470d6e8b1fc537f848 Raul <raulbonillaclaramunt@email.com> 1720566595 +0900	commit: exercise1 solved
+346d89524fb46ac7380a08470d6e8b1fc537f848 1333d92cdc458f55c219405256596f3f65453984 Raul <raulbonillaclaramunt@email.com> 1720567862 +0900	commit: exercis3 solved
+1333d92cdc458f55c219405256596f3f65453984 77dbaba636c612e9e559855a307bf8f9c24a3a77 Raul <raulbonillaclaramunt@email.com> 1720568587 +0900	commit: new set of Async-Await exercises
+77dbaba636c612e9e559855a307bf8f9c24a3a77 8451f25bda52398286b2cd1eb74d188e02ab44ec Raul <raulbonillaclaramunt@email.com> 1720644248 +0900	commit: async example developed
+8451f25bda52398286b2cd1eb74d188e02ab44ec 1cb4f3f01c4ce285a6bfbb2690be28a2b47db404 Raul <raulbonillaclaramunt@email.com> 1720645789 +0900	commit: pause on async developed
+1cb4f3f01c4ce285a6bfbb2690be28a2b47db404 8f0706ca114cf47d634952969638e87f520e9d2e Raul <raulbonillaclaramunt@email.com> 1720647536 +0900	commit: example of how async functions return Promises
+8f0706ca114cf47d634952969638e87f520e9d2e d4c74008d7cf11ab9037920d02e00345167079fb Raul <raulbonillaclaramunt@email.com> 1720648849 +0900	commit: error handling in async functions example
+d4c74008d7cf11ab9037920d02e00345167079fb 8f6f2eb045260fc19ff1dee4fb445fb79494efbf Raul <raulbonillaclaramunt@email.com> 1720650954 +0900	commit: warmup exercise solved
+8f6f2eb045260fc19ff1dee4fb445fb79494efbf 374ec6b88131c2c90a2d672daf571560c53ebba6 Raul <raulbonillaclaramunt@email.com> 1720651558 +0900	commit: warmup exxercise imrproved
+374ec6b88131c2c90a2d672daf571560c53ebba6 f57c944bb8cdcfc1429a75634e303a56fc30b390 Raul <raulbonillaclaramunt@email.com> 1720687292 +0900	commit: exercise1 solved
+f57c944bb8cdcfc1429a75634e303a56fc30b390 90142497026405a8988761c3eb4bdd7aa14bc768 Raul <raulbonillaclaramunt@email.com> 1720728275 +0900	commit: exercise2 async complete
+90142497026405a8988761c3eb4bdd7aa14bc768 a2cb45ca84394d9c1d75a4f7efe87af25c4d51a8 Raul <raulbonillaclaramunt@email.com> 1720728744 +0900	commit: BONUS exercise solved
+a2cb45ca84394d9c1d75a4f7efe87af25c4d51a8 b1a0a5a1a0ea0e82286c19c069cdd901a32a7fae Raul <raulbonillaclaramunt@email.com> 1720730961 +0900	commit: exercise2 improved solution
+b1a0a5a1a0ea0e82286c19c069cdd901a32a7fae fe37e94ea83bfe30a36a6d670fdfaec1aa4d8a2d Raul <raulbonillaclaramunt@email.com> 1720732368 +0900	commit: exercise3 solved with vanilla promises
+fe37e94ea83bfe30a36a6d670fdfaec1aa4d8a2d fe37e94ea83bfe30a36a6d670fdfaec1aa4d8a2d Raul <raulbonillaclaramunt@email.com> 1720734029 +0900	checkout: moving from session-8 to session-9
+fe37e94ea83bfe30a36a6d670fdfaec1aa4d8a2d 4618a9d3270d67187ef6b2a05eb97a66bbf273be Raul <raulbonillaclaramunt@email.com> 1720734372 +0900	commit: updated directory and exercise statements
+4618a9d3270d67187ef6b2a05eb97a66bbf273be 72ce11c6a513c97334c028e4140799922b59bcb2 Raul <raulbonillaclaramunt@email.com> 1720738320 +0900	commit: spread example being developed
+72ce11c6a513c97334c028e4140799922b59bcb2 7090d3f8b59857313186d7019127c218179e7905 Raul <raulbonillaclaramunt@email.com> 1720739131 +0900	commit: exerise 1 solved
+7090d3f8b59857313186d7019127c218179e7905 20fe8949f15dfffa95fd2b5f48b47d8be6efbfc8 Raul <raulbonillaclaramunt@email.com> 1720740423 +0900	commit: exercise 2 solved
+20fe8949f15dfffa95fd2b5f48b47d8be6efbfc8 806faf346e14b2686f680e2a59f737497a53bc41 Raul <raulbonillaclaramunt@email.com> 1720756142 +0900	commit: exercise3 solved with Spread syntax and with JSON parse + stringify
+806faf346e14b2686f680e2a59f737497a53bc41 26db3d3671b64faa332b18eb03af453453f292b2 Raul <raulbonillaclaramunt@email.com> 1720764876 +0900	commit: directory new arrangement => new numbered names
+26db3d3671b64faa332b18eb03af453453f292b2 26db3d3671b64faa332b18eb03af453453f292b2 Raul <raulbonillaclaramunt@email.com> 1720765259 +0900	checkout: moving from session-9 to session-9
+26db3d3671b64faa332b18eb03af453453f292b2 0725425ccd0581406da1bf08e091b7b934a08b31 Raul <raulbonillaclaramunt@email.com> 1720765893 +0900	commit: try to merge directory change of names
+0725425ccd0581406da1bf08e091b7b934a08b31 5d5d0c5f2b360fcb635ff9487fb00e904cb9fed6 Raul <raulbonillaclaramunt@email.com> 1720815988 +0900	commit: exercise3 solved and commented
+5d5d0c5f2b360fcb635ff9487fb00e904cb9fed6 7388d9cc8b2a29598246aaafb66cab2e73bb9d21 Raul <raulbonillaclaramunt@email.com> 1720816461 +0900	commit: exercise1 solved
+7388d9cc8b2a29598246aaafb66cab2e73bb9d21 d2da8232a44b5d1f83e704f8fa1261b9a13b53d8 Raul <raulbonillaclaramunt@email.com> 1720817242 +0900	commit: warmup-exercise solved
+d2da8232a44b5d1f83e704f8fa1261b9a13b53d8 973b98b9b6857b5e6fd2cabe44cdc0fcae131382 Raul <raulbonillaclaramunt@email.com> 1720818083 +0900	commit: exercise2 solved
+973b98b9b6857b5e6fd2cabe44cdc0fcae131382 973b98b9b6857b5e6fd2cabe44cdc0fcae131382 Raul <raulbonillaclaramunt@email.com> 1720818834 +0900	checkout: moving from session-9 to session-9
+973b98b9b6857b5e6fd2cabe44cdc0fcae131382 cddcd3f7f90c7a9b15a4fd83608b8e6a6dbc2f9a Raul <raulbonillaclaramunt@email.com> 1720819263 +0900	commit: resolve pull request conflict
+cddcd3f7f90c7a9b15a4fd83608b8e6a6dbc2f9a 3ada4c750a88bd2819fb83026c5b0f3e8b5a4584 Raul <raulbonillaclaramunt@email.com> 1720819732 +0900	pull: Fast-forward
+3ada4c750a88bd2819fb83026c5b0f3e8b5a4584 c7c097f3f7a4f2badc27b83cf1502def30549bfd Raul <raulbonillaclaramunt@email.com> 1720819854 +0900	commit: rename destructuring exercises
+c7c097f3f7a4f2badc27b83cf1502def30549bfd 2eeda39f4b25d7fba5b9f04633f30062b8fc2bb5 Raul <raulbonillaclaramunt@email.com> 1720821454 +0900	commit: warmup exercise solved
+2eeda39f4b25d7fba5b9f04633f30062b8fc2bb5 5d9fe7097002897d5b2443403a18910622438776 Raul <raulbonillaclaramunt@email.com> 1720822627 +0900	commit: exercise1 solved
+5d9fe7097002897d5b2443403a18910622438776 7804be17abc0960a0f07485b1d3f323b318ebd83 Raul <raulbonillaclaramunt@email.com> 1720825303 +0900	commit: exercise2 solved in both regular conditional plus ternary
+7804be17abc0960a0f07485b1d3f323b318ebd83 fa7d59b831d5043e4cbbac92c3e647bf68b30975 Raul <raulbonillaclaramunt@email.com> 1720826550 +0900	commit: exercise3 solved
+fa7d59b831d5043e4cbbac92c3e647bf68b30975 827915efe80a6c54aff1b76a1b4d923bb2529ec0 Raul <raulbonillaclaramunt@email.com> 1720827295 +0900	commit: update directories names
+827915efe80a6c54aff1b76a1b4d923bb2529ec0 8ade2bf9e47cec421c393cf190154a2ed43d6cf4 Raul <raulbonillaclaramunt@email.com> 1720828156 +0900	commit: exercise3 ternary operator improved solution
+8ade2bf9e47cec421c393cf190154a2ed43d6cf4 d9daab489a1a4d077389623a5ee34cb6b9f8dac4 Raul <raulbonillaclaramunt@email.com> 1720914236 +0900	commit: switch exercises set up
+d9daab489a1a4d077389623a5ee34cb6b9f8dac4 299f1b36b241aac5f8c4f492b986539765b94511 Raul <raulbonillaclaramunt@email.com> 1720916364 +0900	commit: exercise1 solved
+299f1b36b241aac5f8c4f492b986539765b94511 24abbd653c517cb7cd60ff25d276569ff4c8c36b Raul <raulbonillaclaramunt@email.com> 1720917388 +0900	commit: warmup-exercise solved
+24abbd653c517cb7cd60ff25d276569ff4c8c36b d19e1bdfc7173306e5015cc0a6925fccf300325c Raul <raulbonillaclaramunt@email.com> 1720918762 +0900	commit: exercise2 solved
+d19e1bdfc7173306e5015cc0a6925fccf300325c 30fe4a6c9e7d4aeab32575bded4b1efd0e1752cb Raul <raulbonillaclaramunt@email.com> 1720919164 +0900	commit: exercise2 improved and extended
+30fe4a6c9e7d4aeab32575bded4b1efd0e1752cb ef32ae9ef66e1a584a29a15f1b24f2059c975993 Raul <raulbonillaclaramunt@email.com> 1720922024 +0900	commit: exercise2 solved
+ef32ae9ef66e1a584a29a15f1b24f2059c975993 7be68805de4c8fd0f5b29050367e09207ee734ac Raul <raulbonillaclaramunt@email.com> 1720923326 +0900	commit: generator exercises statemnets set and ready to code
+7be68805de4c8fd0f5b29050367e09207ee734ac df3876b9984340477746341621169d908f3c5803 Raul <raulbonillaclaramunt@email.com> 1720924417 +0900	commit: generators kickstart
+df3876b9984340477746341621169d908f3c5803 51e722873578356b86a69e9245cdffbc6d8fbcdd Raul <raulbonillaclaramunt@email.com> 1721003805 +0900	commit: notes on generators - with examples
+51e722873578356b86a69e9245cdffbc6d8fbcdd fadccea9670461d25365b65009b74ccd1a88dd44 Raul <raulbonillaclaramunt@email.com> 1721083126 +0900	commit: warmup exercise solved
+fadccea9670461d25365b65009b74ccd1a88dd44 2fabe2eaa27d032e19e109e08f93051c655585d1 Raul <raulbonillaclaramunt@email.com> 1721083470 +0900	commit: exercise1 solved
+2fabe2eaa27d032e19e109e08f93051c655585d1 20387f0abaa18cde63fb86c26a40272f6ef5a2ec Raul <raulbonillaclaramunt@email.com> 1721084441 +0900	commit: exercise1 improved and solved using different kinds of loop
+20387f0abaa18cde63fb86c26a40272f6ef5a2ec 2173caf72d1d4b8fc9a2781dbcb897e970d61ed7 Raul <raulbonillaclaramunt@email.com> 1721087762 +0900	commit: yield* explained thorugh example
+2173caf72d1d4b8fc9a2781dbcb897e970d61ed7 e84c6a1557b50ebb4fe6bcae917c0e5df2bd30ad Raul <raulbonillaclaramunt@email.com> 1721088183 +0900	commit: yield* explained thorugh example
+e84c6a1557b50ebb4fe6bcae917c0e5df2bd30ad b767ca9791915b3408779e6d07a3144db0ca6a6b Raul <raulbonillaclaramunt@email.com> 1721131030 +0900	commit: exercise3 1st attempt
+b767ca9791915b3408779e6d07a3144db0ca6a6b 9841f4d4cd065340550c1967a61d847c5b4efc7e Raul <raulbonillaclaramunt@email.com> 1721160501 +0900	commit: exercise3 solved
+9841f4d4cd065340550c1967a61d847c5b4efc7e 8973926e84290e43f34564109aa5828ab262a03c Raul <raulbonillaclaramunt@email.com> 1722240958 +0900	commit: new set of .this exercises
+8973926e84290e43f34564109aa5828ab262a03c c54592b70131f80d0d8723566bd30d3f4c382b38 Raul <raulbonillaclaramunt@email.com> 1722242475 +0900	commit: develope this keyword examples
+c54592b70131f80d0d8723566bd30d3f4c382b38 dae388ec969e4bb5fa1b0cd9636088bc17130b23 Raul <raulbonillaclaramunt@email.com> 1722290356 +0900	commit: new set of Prototype exercises
+dae388ec969e4bb5fa1b0cd9636088bc17130b23 ae60dae396ab4ab8c41c9d10e9f1c801ab5cb4bb Raul <raulbonillaclaramunt@email.com> 1722298223 +0900	commit: Prototype warmup and exercise1 solved
+ae60dae396ab4ab8c41c9d10e9f1c801ab5cb4bb 9042b8d6f01108b26d390b020e8ac29285badf08 Raul <raulbonillaclaramunt@email.com> 1722308973 +0900	commit: exercise2 prototypes solved
+9042b8d6f01108b26d390b020e8ac29285badf08 b47c4e9179bc4f1059ea5f688cc85a54b4b0e943 Raul <raulbonillaclaramunt@email.com> 1722336505 +0900	commit: exercise3 prototypes solved
+                                                                                                                                                                                  0000000000000000000000000000000000000000 721a67bfa68cd6505c313ceea7ee116bf3c965c3 Raul <raulbonillaclaramunt@email.com> 1722376444 +0900
