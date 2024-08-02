@@ -32,9 +32,48 @@
     9. What properties are on each Object? Why?
 
     BONUS: Did we just create Object Oriented Programming?
-*/
-function Person(name, age, favouriteFood) {
-    this.name = name;
-    this.age = age;
-    this.favouriteFood = favouriteFood;
-}
+    */
+    function Person(name, age, favouriteFood) {
+        this.name = name;
+        this.age = age;
+        this.favouriteFood = favouriteFood;
+    };
+    //console.log(Person.prototype);
+    Person.prototype.greet = function() {
+        console.log(`${this.name} says hello!`);
+    };
+    //console.log(Person.prototype);
+    function SuperHero(name, age, favouriteFood, overpowered) {
+        this.name = name;
+        this.age = age;
+        this.favouriteFood = favouriteFood;
+        this.overpowered = overpowered;
+    };
+    /*Alternatively we could code it like this:
+    function SuperHero(name, age, favouriteFood, overpowered) {
+    Person.call(this, name, age, favouriteFood); // Call the Person constructor
+    this.overpowered = overpowered;
+    };*/
+
+    //alternatives for the same outcome (from worst to best)
+    //SuperHero.prototype.__proto__ = Person.prototype;
+    Object.setPrototypeOf(SuperHero.prototype, Person.prototype);
+
+const anya = new Person("Anya", 40, "Sour Keys");
+const batman = new SuperHero("Bruce", 55, "Steak", false);
+
+anya.greet();
+batman.greet();
+console.log("---");
+
+console.log(anya.__proto__.constructor.name);
+//console.log(anya.__proto__);
+console.log(anya.__proto__.__proto__.constructor.name);
+//console.log(anya.__proto__.__proto__);
+console.log("---");
+console.log(batman.__proto__.constructor.name);
+//console.log(batman.__proto__);
+console.log(batman.__proto__.__proto__.constructor.name);
+//console.log(batman.__proto__.__proto__);
+console.log(batman.__proto__.__proto__.__proto__.constructor.name);
+//console.log(batman.__proto__.__proto__.__proto__);
