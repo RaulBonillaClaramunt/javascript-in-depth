@@ -20,7 +20,7 @@ const boundGreet = paul.friend.greet.bind({name: "Lolo"});
 //it passes bind as a function, so we can call it any time:
 boundGreet();//it prints { name: 'Lolo' } + Lolo says hi!
 
-//now, we can use th new bound element to apply it anywhere:
+//now, we can use the new bound element to apply it anywhere:
 paul.friend.greet = paul.friend.greet.bind({name: "Lolo"});
 //or applying it like this:
 paul.greet = boundGreet;
