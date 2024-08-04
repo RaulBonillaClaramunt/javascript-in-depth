@@ -16,3 +16,19 @@
 
     *HINT: "this" will refer to the instance inside the class
 */
+class Animal {
+   constructor(type, name) {
+      this.type = type;
+      this.name = name;
+   }
+};
+
+const dragon = new Animal('Dragon', 'Mulan');
+
+const tiger = new Animal('Tiger', 'Sandokhan');
+
+console.log(dragon);
+console.log(tiger);
+
+tiger.name = 'Manolo';
+console.log(tiger);
