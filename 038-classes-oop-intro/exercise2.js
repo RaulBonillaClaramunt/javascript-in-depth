@@ -32,7 +32,7 @@
 */
 class Bookstore {
    constructor(books) {
-      this.books = [...books];
+      this.books = Array.isArray(books) ? [...books] : [];
    }
 
    listBooks() {
@@ -54,4 +54,4 @@ const hp = new Book("Harry Potter", "J.K. Rowling");
 
 const bookstore = new Bookstore( [ nineteen84, hp ] );
 
-bookstore.listBooks([ nineteen84, hp ]);
+bookstore.listBooks();

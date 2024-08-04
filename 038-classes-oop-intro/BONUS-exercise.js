@@ -1,18 +1,23 @@
 /*
-    1. Create a class called "Animal"
+    Let's see how a "Factory" class/function might work
 
-    2. Allow us to pass in 2 properties/fields to the
-       Animal constructor which get set to the instance:
-       - type (String)
-       - name (String)
+    1. Create a class called "EnemyFactory"
 
-    3. Create two instances of the Animal class of your
-       choice passing in different "type" and "name" for each
+    2. Make the following work to produce the output shown:
 
-    4. Print out both animal instances
+    const factory = new EnemyFactory();
+    const flying = factory.generateFlyingEnemy("batman");
+    flying.fly(); // batman can fly!
 
-    5. Change the "name" of one of your animals and print it
-       out again.
+    const swimming = EnemyFactory.generateSwimmingEnemy("aquaman");
+    swimming.swim(); // aquaman can swim!
 
-    *HINT: "this" will refer to the instance inside the class
+    * What is the difference between these two? When might you
+      even use this? Where are the property keys of each of these:
+      - EnemyFactory
+      - factory
+      - factory.__proto__
+      - flying.__proto__
+      - swimming.__proto__
 */
+class EnemyFactory

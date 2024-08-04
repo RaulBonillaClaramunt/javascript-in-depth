@@ -26,24 +26,34 @@ class Student {
    constructor(name, major, grades) {
       this.name = name;
       this.major = major;
-      this.grades = [...grades];
+      this.grades = Array.isArray(grades) ? [...grades] : []; // Ensure grades is an array
    }
 
    addGrade(grade) {
-      this.grades.push(grade);
+      if (typeof grade === 'number') {
+         this.grades.push(grade);
+      } else {
+         console.error('"grade" must be a number');
+      }
+
    }
 
    gpa(grades) {
+      if (this.grades.length === 0) return 0;
       const sum = this.grades.reduce((accumulator, currentValue) => {
          return accumulator + currentValue;
       });
 
-      const average = sum / this.grades.length;
-      return average;
+//simple alternative: return sum / this.grades.length;
+//better one:
+     return parseFloat((sum / this.grades.length).toFixed(2));
    }
 };
 
 const eva = new Student("Eva", "Arts", [95, 75, 83]);
 
 console.log(eva);
+console.log(eva.gpa());
+console.log("---");
+eva.addGrade(89);
 console.log(eva.gpa());
