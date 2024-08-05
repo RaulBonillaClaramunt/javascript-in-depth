@@ -38,7 +38,7 @@ class Student {
 
    }
 
-   gpa(grades) {
+   gpa() {
       if (this.grades.length === 0) return 0;
       const sum = this.grades.reduce((accumulator, currentValue) => {
          return accumulator + currentValue;

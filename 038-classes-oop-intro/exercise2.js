@@ -37,7 +37,8 @@ class Bookstore {
 
    listBooks() {
       for (const book of this.books) {
-         console.log(`${book.name} by ${book.author}`);
+         //console.log(`${book.name} by ${book.author}`);
+         book.displayBook();
    }
    }
 };
@@ -46,6 +47,10 @@ class Book {
    constructor(name, author) {
       this.name = name;
       this.author = author;
+   }
+
+   displayBook() {
+      console.log(`${this.name} by ${this.author}`);
    }
 }
 

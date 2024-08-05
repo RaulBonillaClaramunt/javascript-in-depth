@@ -17,33 +17,46 @@
       the creative freedom to design these classes
 */
 class Player {
-   constructor(name, shape, color, shotsPerMinute, speed) {
+   lives = 3;
+   shootingDelay = 2000;//ms
+   yPosition = 500;//as a starting point
+   xPosition = 500;//as a starting position
+   constructor(name, shape, color, shootingPower, speed) {
    this.name = name;
    this.shape = shape;
    this.color = color;
-   this.shotsPerMinute = shotsPerMinute;
+   this.shootingPower = shootingPower;
+   this.lives
    this.speed = speed;
+   this.position
    };
 }
 
 class Enemy {
-   constructor(name, shape, color, width, verticalSpeed, lateralSpeed) {
+   lateralSpeed = 500;
+   verticalSpeed = 500;
+   hp = 1;//health power - they die if they get a shot
+   shootingDelay = 9000;//slower than Player
+   yPosition;//we just declare them and will assing values inside the constructor
+   xPosition;//so not all the Enemies start at the same point but spread on the screen ;)
+   constructor(name, shape, color, width) {
       this.name = name;
       this.shape = shape;
       this.color = color;
       this.width = width;
-      this.verticalSpeed = verticalSpeed;
-      this.lateralSpeed = lateralSpeed;
+      this.shootingPower = shootingPower;
+      this.score
+      this.position
       };
 }
 
-const destructor = new Player('Avenger', 'Destructor', 'Blue', 60, 1000);
-const figther = new Player('Cherokee', 'Fighter', 'Silver', 20, 2000);
-const ghost = new Player('Turpin', 'Ghost', 'Green', 100, 500, 500);
-const wizard = new Player('Deathson', 'Wizard', 'Red', 200, 250, 500);
+const spaceShip = new Player('Avenger', 'Space Ship', 'White', 60, 1000);
+const figther = new Enemy('Cherokee', 'Fighter', 'Silver', 20, 2000);
+const ghost = new Enemy('Turpin', 'Ghost', 'Green', 100, 500, 500);
+const wizard = new Enemy('Deathson', 'Wizard', 'Red', 300, 500, 500);
 
 
-console.log(destructor);
+console.log(spaceShip);
 console.log(figther);
 console.log(ghost);
 console.log(wizard);
