@@ -37,16 +37,15 @@ class Enemy {
    verticalSpeed = 500;
    hp = 1;//health power - they die if they get a shot
    shootingDelay = 9000;//slower than Player
-   yPosition;//we just declare them and will assing values inside the constructor
-   xPosition;//so not all the Enemies start at the same point but spread on the screen ;)
-   constructor(name, shape, color, width) {
+   yPos;//we just declare them and will assing values inside the constructor
+   xPos;//so not all the Enemies start at the same point but spread on the screen ;)
+   score = 10;
+   constructor(xPos, yPos, name, shape, color, width) {
       this.name = name;
       this.shape = shape;
       this.color = color;
       this.width = width;
-      this.shootingPower = shootingPower;
-      this.score
-      this.position
+      this.position;
       };
 }
 
