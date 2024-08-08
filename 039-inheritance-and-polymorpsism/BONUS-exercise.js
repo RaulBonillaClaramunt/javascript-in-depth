@@ -31,8 +31,20 @@
         // FancyArray(3) [ 1, 3, 5 ]
 */
 class FancyArray extends Array {
-   mapWithLogging() {
-      for (const el of array) console.log(`Current: ${----}, After Callback:${----}`);
+/*   constructor(callbackFn, thisArg){
+      super(callbackFn, thisArg);
+   }
+*/
+   mapWithLogging(callback, thisArg = this) {
+      let newArray = new FancyArray();
+      let i = 0;
+      for (const item of thisArg) {
+         const mappedItem = callback(item, i);
+         newArray.push(mappedItem);
+         i++;
+         console.log(`Current: ${item}, After Callback:${mappedItem }`);
+      }
+      return newArray;
    }
 }
 
