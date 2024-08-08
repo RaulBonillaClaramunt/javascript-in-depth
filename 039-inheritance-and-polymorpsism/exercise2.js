@@ -35,3 +35,69 @@
        // A red rectangle
        // A round and awesome green circle
 */
+class Shape {
+   type = 'Shape';
+   constructor(colour = 'Transparent') {
+      this.colour = colour;
+   }
+
+   describe() {
+      console.log(`A ${this.colour} ${this.type}`);
+   }
+}
+
+class Square extends Shape {
+   constructor(colour, sideLength) {
+      super(colour);
+      this.sideLength = sideLength;
+      this.type = 'Square';
+   }
+
+   area() {
+      const squareArea = this.sideLength * this.sideLength
+      return squareArea;
+   }
+}
+
+class Rectangle extends Shape {
+   constructor(colour, width, height){
+      super(colour);
+      this.width = width;
+      this.height = height;
+      this.type = 'Rectangle';
+   }
+
+   area() {
+      const rectangleArea = this.width * this.height;
+      return rectangleArea;
+   }
+}
+
+class Circle extends Shape {
+   constructor(colour, radius) {
+      super(colour);
+      this.radius = radius;
+      this.type = "Circle";
+   }
+
+   area() {
+      return Math.PI * this.radius * this.radius;
+   }
+
+   describe() {
+      console.log(`A round and awesome ${this.colour} ${this.type}`);
+   }
+}
+
+const square = new Square("blue", 5);
+const rectangle = new Rectangle("red", 5, 6);
+const circle = new Circle("green", 3);
+console.log( square.area() ); // 25
+console.log( rectangle.area() ); // 30
+console.log( circle.area() ); // 28.27433
+for ( const shape of [square, rectangle, circle] ) {
+ shape.describe();
+}
+// A blue square
+// A red rectangle
+// A round and awesome green circle
