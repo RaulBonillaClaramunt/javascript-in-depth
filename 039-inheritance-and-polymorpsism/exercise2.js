@@ -74,14 +74,15 @@ class Rectangle extends Shape {
 }
 
 class Circle extends Shape {
+   type = "Circle";
    constructor(colour, radius) {
       super(colour);
       this.radius = radius;
-      this.type = "Circle";
+
    }
 
    area() {
-      return Math.PI * this.radius * this.radius;
+      return Math.PI * this.radius ** 2;
    }
 
    describe() {
