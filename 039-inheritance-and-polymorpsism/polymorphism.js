@@ -10,7 +10,7 @@ class Player {
         this.items = items;
     }
     speak(phrase) {
-        console.log(`${this.name} says ${phrase}`);
+        console.log(`${this.name} says - ${phrase}?`);
     }
 }
 
@@ -26,7 +26,7 @@ class Warrior extends Player {
     }
 //this line will override the speak method from the Parent
     speak(phrase) {
-        console.log(`${this.name} SHOUTS ${phrase}!!!!!!`)
+        console.log(`${this.name} SHOUTS - ${phrase}!!!!!!`)
     }
 }
 
@@ -62,6 +62,12 @@ class Bartender extends Player {
 const warrior = new Warrior('Conan', 2000, 0, ['Sword'], 'Round shield');
 const wizard = new Wizard('Meridth', 100, 1000, ['Pointy hat'], 'Oat wand');
 const bartender = new Bartender('Manolo', 1000, 1000, ['Clothe'], "Big'ol Super Mug");
-console.log(warrior);
-console.log(wizard);
-console.log(bartender);
+//console.log(warrior);
+//console.log(wizard);
+//console.log(bartender);
+
+const players = [warrior, wizard, bartender];
+console.log(players);
+for (const player of players) {
+    player.speak('FIRE');
+}
