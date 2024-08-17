@@ -32,6 +32,9 @@ const palindrome = (string) => {
     //recursive case: check if substring is palindrome without first and last characters
     return palindrome(string.slice(1, string.length - 1));
 
+    //alternative code:
+    //return palindrome(string.substr(1, string.length - 2));
+
 };
 
 console.log(palindrome('racecar'));
