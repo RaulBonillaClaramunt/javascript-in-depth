@@ -55,4 +55,5 @@ console.log(palindrome1('kayak'));
 console.log(palindrome1('kaya'));
 console.log('--------')
 console.log(palindrome2('kaya'));
-console.log(palindrome1('kayak'));
+console.log(palindrome2('marram'));
+console.log(palindrome2('kayak'));
