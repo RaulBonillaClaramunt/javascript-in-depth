@@ -22,23 +22,44 @@
     HINT2: What are the base-cases and what do we want to return?
 */
 const flatten = (array) => {
-    let newArray = [];
+    const finalArray = [];
     //decalre a for of loop to iterate through each array element
+    for (const element of array) {
+        if (Array.isArray(element)) {
+    //... allows you to expand an iterable (like an array) into individual elements.
+    //In the context of a recursive function, it flattens nested structures.
+            const flattenedArray = flatten(element);
+            //for (const innerElement of flattenedArray) {
+               //finalArray.push(innerElement);         }
+                //the line below is equivalent to both lines above:
+                finalArray.push(...flattenedArray);
+            } else {
+            finalArray.push(element);
+        };
+    }
+
+    return finalArray;
+};
+/*
+const flatten = (array) => {
+    const flattenedArray = [];
+    //declare a for of loop to iterate through each array element
     for (const el of array) {
-        if (!Array.isArray(el)) {
-            newArray.push(el)
-        }
         if (Array.isArray(el)) {
     //... allows you to expand an iterable (like an array) into individual elements.
     //In the context of a recursive function, it flattens nested structures.
-            newArray.push(...flatten(el));
-        };
+            flattenedArray.push(...flatten(el));
+        } else {
+            flattenedArray.push(el)};
     }
-    return newArray;
-};
+    return flattenedArray;
+};*/
 
 console.log(flatten([1, 2, 3]));
 // [ 1, 2, 3 ]
+
+console.log(flatten([1, 2, 3, [1, 2, 3]]));
+// [ 1, 2, 3, 1, 2, 3 ]
 
 console.log(flatten([1, [4, 5, 6, [7, 8, 9]], 2, 3]));
 // [1, 4, 5, 6, 7, 8, 9, 2, 3]
